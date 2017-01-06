@@ -8,7 +8,7 @@ GAME
 	Mode = SCIENCE_SANDBOX
 	Status = 1
 	Seed = 180669740
-	scene = 7
+	scene = 5
 	editor = None
 	flag = Squad/Flags/kerbin
 	launchID = 15
@@ -1567,86 +1567,6 @@ GAME
 			sci = 0
 			cap = 32
 		}
-		Science
-		{
-			id = evaReport@MunInSpaceLowNorthwestCrater
-			title = EVA Report from space just above the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 3
-			sci = 0
-			cap = 24
-		}
-		Science
-		{
-			id = crewReport@MunSrfLandedNorthwestCrater
-			title = Crew Report from the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 20
-		}
-		Science
-		{
-			id = mobileMaterialsLab@MunSrfLandedNorthwestCrater
-			title = Materials Study from the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 128
-		}
-		Science
-		{
-			id = barometerScan@MunSrfLandedNorthwestCrater
-			title = Atmospheric Pressure Scan from the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 48
-		}
-		Science
-		{
-			id = temperatureScan@MunSrfLandedNorthwestCrater
-			title = Temperature Scan from the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 32
-		}
-		Science
-		{
-			id = mysteryGoo@MunSrfLandedNorthwestCrater
-			title = Mystery Goo™ Observation from the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 52
-		}
-		Science
-		{
-			id = surfaceSample@MunSrfLandedNorthwestCrater
-			title = Surface Sample from the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 160
-		}
-		Science
-		{
-			id = evaReport@MunSrfLandedNorthwestCrater
-			title = EVA Report from the Mun's Northwest Crater
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 32
-		}
 	}
 	SCENARIO
 	{
@@ -2144,7 +2064,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 1052767.0884905539
+		UT = 1052140.7043384835
 		activeVessel = 8
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -3483,37 +3403,37 @@ GAME
 			pid = ce7e46189aa24ea6a83a65443c5dc889
 			name = mun2
 			type = Ship
-			sit = LANDED
-			landed = True
+			sit = SUB_ORBITAL
+			landed = False
 			landedAt = 
 			splashed = False
-			met = 27445.582311867736
+			met = 26819.19815979735
 			lct = 1025321.5061786862
-			lastUT = 1052767.0884905539
+			lastUT = 1052140.7043384835
 			root = 0
-			lat = 10.18218210906233
-			lon = 17.918211867080601
-			alt = 1846.5231263391324
-			hgt = 6.33785915
-			nrm = -0.0108181834,0.999923646,0.00597655773
-			rot = 0.213785753,0.464168251,0.634470582,-0.579905689
-			CoM = -0.00418543816,-2.9238553,-0.00421619415
+			lat = 9.3592763752802046
+			lon = -0.48139047734689755
+			alt = 64906.958573100332
+			hgt = -1
+			nrm = 0.853294015,0.243829936,0.460908234
+			rot = 0.712271333,-0.0908051953,0.142257929,-0.681312442
+			CoM = -0.00319111347,-3.20050597,-0.00323367119
 			stg = 2
 			prst = False
 			ref = 0
 			ctrl = True
-			cPch = 0.2999995
-			cHdg = 1.647999
+			cPch = 0.3799997
+			cHdg = 1.374
 			cMod = 0
 			ORBIT
 			{
-				SMA = 100934.41916354682
-				ECC = 0.99975004618480579
-				INC = 10.182243040727572
-				LPE = 270.0026955017932
-				LAN = 4.8129606898585848
-				MNA = -3.1415925386883634
-				EPH = 1052767.0884905539
+				SMA = 179552.14104168682
+				ECC = 0.61575255499581794
+				INC = 10.220186522902786
+				LPE = 226.58422304432216
+				LAN = 8.7047259774815302
+				MNA = -2.6332800284703985
+				EPH = 1051970.2381983849
 				REF = 2
 			}
 			PART
@@ -3540,8 +3460,8 @@ GAME
 				attN = top, 21
 				mass = 0.800000012
 				shielded = False
-				temp = 227.92988767683002
-				tempExt = 228.34659215962506
+				temp = 223.79959147012593
+				tempExt = 223.102716455711
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -3589,7 +3509,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -3684,7 +3604,7 @@ GAME
 						data = 25
 						subjectID = mobileMaterialsLab@KerbinInSpaceHigh
 						xmit = 0.349999994
-						xmitBonus = 1.27874434
+						xmitBonus = 1.39978826
 						title = Materials Study while in space high over Kerbin
 						triggered = False
 						container = 987639498
@@ -3694,7 +3614,7 @@ GAME
 						data = 10
 						subjectID = mysteryGoo@KerbinInSpaceHigh
 						xmit = 0.300000012
-						xmitBonus = 1.27874434
+						xmitBonus = 1.39978826
 						title = Mystery Goo™ Observation while in space high over Kerbin
 						triggered = False
 						container = 987639498
@@ -3704,7 +3624,7 @@ GAME
 						data = 25
 						subjectID = mobileMaterialsLab@MunInSpaceHigh
 						xmit = 0.349999994
-						xmitBonus = 1.27874434
+						xmitBonus = 0
 						title = Materials Study while in space high over the Mun
 						triggered = False
 						container = 987639498
@@ -3714,7 +3634,7 @@ GAME
 						data = 10
 						subjectID = mysteryGoo@MunInSpaceHigh
 						xmit = 0.300000012
-						xmitBonus = 1.27874434
+						xmitBonus = 0
 						title = Mystery Goo™ Observation while in space high over the Mun
 						triggered = False
 						container = 987639498
@@ -3724,7 +3644,7 @@ GAME
 						data = 25
 						subjectID = mobileMaterialsLab@MunInSpaceLow
 						xmit = 0.349999994
-						xmitBonus = 1.27874434
+						xmitBonus = 0
 						title = Materials Study while in space near the Mun
 						triggered = False
 						container = 987639498
@@ -3734,7 +3654,7 @@ GAME
 						data = 10
 						subjectID = mysteryGoo@MunInSpaceLow
 						xmit = 0.300000012
-						xmitBonus = 1.27874434
+						xmitBonus = 0
 						title = Mystery Goo™ Observation while in space near the Mun
 						triggered = False
 						container = 987639498
@@ -3744,7 +3664,7 @@ GAME
 						data = 8
 						subjectID = evaReport@MunInSpaceLowHighlands
 						xmit = 1
-						xmitBonus = 1
+						xmitBonus = 0
 						title = EVA Report from space just above the Mun's Highlands
 						triggered = False
 						container = 987639498
@@ -3754,7 +3674,7 @@ GAME
 						data = 8
 						subjectID = evaReport@MunInSpaceLowLowlands
 						xmit = 1
-						xmitBonus = 1
+						xmitBonus = 0
 						title = EVA Report from space just above the Mun's Lowlands
 						triggered = False
 						container = 987639498
@@ -3764,7 +3684,7 @@ GAME
 						data = 5
 						subjectID = crewReport@MunSrfLandedFarsideCrater
 						xmit = 1
-						xmitBonus = 1
+						xmitBonus = 0
 						title = Crew Report from the Mun's Farside Crater
 						triggered = False
 						container = 987639498
@@ -3774,7 +3694,7 @@ GAME
 						data = 12
 						subjectID = barometerScan@MunSrfLandedFarsideCrater
 						xmit = 0.5
-						xmitBonus = 1.27874434
+						xmitBonus = 0
 						title = Atmospheric Pressure Scan from the Mun's Farside Crater
 						triggered = False
 						container = 987639498
@@ -3784,7 +3704,7 @@ GAME
 						data = 8
 						subjectID = temperatureScan@MunSrfLandedFarsideCrater
 						xmit = 0.5
-						xmitBonus = 1.27874434
+						xmitBonus = 0
 						title = Temperature Scan from the Mun's Farside Crater
 						triggered = False
 						container = 987639498
@@ -3794,7 +3714,7 @@ GAME
 						data = 10
 						subjectID = mysteryGoo@MunSrfLandedFarsideCrater
 						xmit = 0.300000012
-						xmitBonus = 1.27874434
+						xmitBonus = 0
 						title = Mystery Goo™ Observation from the Mun's Farside Crater
 						triggered = False
 						container = 987639498
@@ -3804,7 +3724,7 @@ GAME
 						data = 8
 						subjectID = evaReport@MunSrfLandedFarsideCrater
 						xmit = 1
-						xmitBonus = 1
+						xmitBonus = 0
 						title = EVA Report from the Mun's Farside Crater
 						triggered = False
 						container = 987639498
@@ -3814,78 +3734,8 @@ GAME
 						data = 30
 						subjectID = surfaceSample@MunSrfLandedFarsideCrater
 						xmit = 0.25
-						xmitBonus = 1.27874434
-						title = Surface Sample from the Mun's Farside Crater
-						triggered = False
-						container = 987639498
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@MunInSpaceLowNorthwestCrater
-						xmit = 1
-						xmitBonus = 1
-						title = EVA Report from space just above the Mun's Northwest Crater
-						triggered = False
-						container = 987639498
-					}
-					ScienceData
-					{
-						data = 5
-						subjectID = crewReport@MunSrfLandedNorthwestCrater
-						xmit = 1
-						xmitBonus = 1
-						title = Crew Report from the Mun's Northwest Crater
-						triggered = False
-						container = 987639498
-					}
-					ScienceData
-					{
-						data = 12
-						subjectID = barometerScan@MunSrfLandedNorthwestCrater
-						xmit = 0.5
-						xmitBonus = 1.27874434
-						title = Atmospheric Pressure Scan from the Mun's Northwest Crater
-						triggered = False
-						container = 987639498
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = temperatureScan@MunSrfLandedNorthwestCrater
-						xmit = 0.5
-						xmitBonus = 1.27874434
-						title = Temperature Scan from the Mun's Northwest Crater
-						triggered = False
-						container = 987639498
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@MunSrfLandedNorthwestCrater
-						xmit = 1
-						xmitBonus = 1
-						title = EVA Report from the Mun's Northwest Crater
-						triggered = False
-						container = 987639498
-					}
-					ScienceData
-					{
-						data = 30
-						subjectID = surfaceSample@MunSrfLandedNorthwestCrater
-						xmit = 0.25
-						xmitBonus = 1.27874434
-						title = Surface Sample from the Mun's Northwest Crater
-						triggered = False
-						container = 987639498
-					}
-					ScienceData
-					{
-						data = 25
-						subjectID = mobileMaterialsLab@MunSrfLandedNorthwestCrater
-						xmit = 0.349999994
 						xmitBonus = 0
-						title = Materials Study from the Mun's Northwest Crater
+						title = Surface Sample from the Mun's Farside Crater
 						triggered = False
 						container = 987639498
 					}
@@ -3998,7 +3848,7 @@ GAME
 					masterModule = True
 					controlDirection = 0
 					controlMode = 0
-					TWR1VelocitySetpoint = -0.93898201
+					TWR1VelocitySetpoint = -0.624038696
 					TWR1HCTarget = 0
 					TWR1Engaged = False
 					stagingEnabled = True
@@ -4127,8 +3977,8 @@ GAME
 				attN = top, 0
 				mass = 0.600000024
 				shielded = False
-				temp = 228.27526105784219
-				tempExt = 228.65116481510961
+				temp = 223.95481373321246
+				tempExt = 223.46431962818497
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4176,7 +4026,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -4475,8 +4325,8 @@ GAME
 				attN = top, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 231.46720080541715
-				tempExt = 231.58936992630672
+				temp = 225.79845647052781
+				tempExt = 224.69205975233655
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4640,8 +4490,8 @@ GAME
 				attN = top, 2
 				mass = 0.0500000007
 				shielded = False
-				temp = 236.72089767988689
-				tempExt = 235.60024718511062
+				temp = 228.67172420552743
+				tempExt = 227.16644329025803
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4749,8 +4599,8 @@ GAME
 				attN = bottom, 5
 				mass = 0.200000003
 				shielded = False
-				temp = 237.25002462739596
-				tempExt = 237.20748798453891
+				temp = 228.98077077294806
+				tempExt = 228.14379560475169
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4775,7 +4625,7 @@ GAME
 					isEnabled = True
 					aniState = LOCKED
 					animSwitch = False
-					animTime = 0.994212449
+					animTime = 0.994457245
 					animSpeed = 0
 					deployPercent = 100
 					animationIsDisabled = False
@@ -4819,10 +4669,10 @@ GAME
 					ScienceData
 					{
 						data = 25
-						subjectID = mobileMaterialsLab@MunSrfLandedNorthwestCrater
+						subjectID = mobileMaterialsLab@MunInSpaceLow
 						xmit = 0.349999994
 						xmitBonus = 0
-						title = Materials Study from the Mun's Northwest Crater
+						title = Materials Study while in space near the Mun
 						triggered = False
 						container = 915329548
 					}
@@ -4870,8 +4720,8 @@ GAME
 				attN = bottom, 12
 				mass = 1
 				shielded = False
-				temp = 237.77778467787485
-				tempExt = 237.76775922207298
+				temp = 229.35542141822049
+				tempExt = 228.40710062304981
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4893,7 +4743,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 184.49007279645221
+					amount = 350.8448451762161
 					maxAmount = 720
 					flowState = True
 					isTweakable = True
@@ -4904,7 +4754,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 225.48783522608707
+					amount = 428.81034459432971
 					maxAmount = 880
 					flowState = True
 					isTweakable = True
@@ -4940,8 +4790,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0149999997
 				shielded = False
-				temp = 237.78763476373433
-				tempExt = 237.75505892942454
+				temp = 229.21023309310698
+				tempExt = 228.1057791365528
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -4965,7 +4815,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -4989,7 +4839,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.000564328104, -1.19209282E-08, 0.00621130457)
+					suspensionPos = (-0.000564276415, 1.7881393E-09, 0.00621129246)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -5083,8 +4933,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0149999997
 				shielded = False
-				temp = 237.7771677905327
-				tempExt = 237.67559653055963
+				temp = 229.20936455499054
+				tempExt = 228.09924131092242
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -5108,7 +4958,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -5132,7 +4982,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.000564280723, -1.19209287E-09, 0.00621128827)
+					suspensionPos = (-0.00056427758, 1.7881393E-09, 0.00621129479)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -5226,8 +5076,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0149999997
 				shielded = False
-				temp = 237.77763852356105
-				tempExt = 237.67917121460874
+				temp = 229.23988217606978
+				tempExt = 228.3290996843786
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -5251,7 +5101,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -5275,7 +5125,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.000564255693, -1.01327897E-08, 0.00621132739)
+					suspensionPos = (-0.000564281305, 1.7881393E-09, 0.00621129014)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -5369,8 +5219,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0149999997
 				shielded = False
-				temp = 237.77684792347097
-				tempExt = 237.67316790560773
+				temp = 229.2029947024194
+				tempExt = 228.04923778494299
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -5394,7 +5244,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -5418,7 +5268,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.000564298301, 0, 0.00621125521)
+					suspensionPos = (-0.000564280141, 1.7881393E-09, 0.00621129433)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -5512,8 +5362,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0149999997
 				shielded = False
-				temp = 237.79381430886008
-				tempExt = 237.8019296406828
+				temp = 229.20240054874762
+				tempExt = 228.04551266292788
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -5537,7 +5387,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -5561,7 +5411,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.00056429964, 2.503395E-08, 0.00621127291)
+					suspensionPos = (-0.000564280606, 1.7881393E-09, 0.0062112906)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -5655,8 +5505,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0149999997
 				shielded = False
-				temp = 237.83252141652238
-				tempExt = 238.09491278617082
+				temp = 229.21210221070237
+				tempExt = 228.12006555064744
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -5680,7 +5530,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -5704,7 +5554,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (-0.000564232876, -5.06639459E-08, 0.00621126359)
+					suspensionPos = (-0.000564277754, 1.19209287E-09, 0.006211292)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -5795,8 +5645,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.5
 				shielded = False
-				temp = 237.79614721761178
-				tempExt = 237.75758800956905
+				temp = 229.23157560478234
+				tempExt = 228.31957133283177
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -5899,7 +5749,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 0.0100849625
+					animState = 0
 					stagingEnabled = True
 					EVENTS
 					{
@@ -5986,8 +5836,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.00499999989
 				shielded = False
-				temp = 237.77180507052748
-				tempExt = 237.67033628622954
+				temp = 229.26409665236358
+				tempExt = 228.37393878112479
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6009,7 +5859,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.999231792359836
+					amount = 99.999500000029798
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -6041,8 +5891,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.00499999989
 				shielded = False
-				temp = 237.77180507052748
-				tempExt = 237.67033628622954
+				temp = 229.26409665236358
+				tempExt = 228.37393878112479
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6064,7 +5914,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.999231792359836
+					amount = 99.999500000029798
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -6096,8 +5946,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0250000004
 				shielded = False
-				temp = 237.91403435502841
-				tempExt = 238.5761174247497
+				temp = 229.06792140513272
+				tempExt = 226.99264318453908
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6122,7 +5972,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 1025321.5061786862
-					currentRotation = (0.66103369, 0.250943303, -0.250605404, -0.661255538)
+					currentRotation = (0.690015137, -0.153842956, 0.153928697, -0.690302491)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -6173,8 +6023,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0250000004
 				shielded = False
-				temp = 237.75199623881505
-				tempExt = 237.39800051181197
+				temp = 229.237464889943
+				tempExt = 228.23793990061384
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6199,7 +6049,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 1025321.5061786862
-					currentRotation = (0.660685599, -0.251053125, 0.251042187, -0.661395967)
+					currentRotation = (0.689977407, 0.153841287, -0.153584331, -0.69041729)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -6249,8 +6099,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 228.25195342142507
-				tempExt = 228.43495835111634
+				temp = 223.8978828682919
+				tempExt = 223.32109639259494
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6353,8 +6203,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 228.22119305453066
-				tempExt = 228.50061045967141
+				temp = 223.90845825771299
+				tempExt = 223.3784208533645
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6457,8 +6307,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 228.18747658019808
-				tempExt = 228.40518497618336
+				temp = 223.87643027401859
+				tempExt = 223.30837153370845
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6576,8 +6426,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 9.99999975E-05
 				shielded = False
-				temp = 228.45640883883226
-				tempExt = 228.59542820829981
+				temp = 223.91632620345177
+				tempExt = 223.43459817210669
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -7075,7 +6925,7 @@ GAME
 							markUT = 1025321.5061786862
 							deltaVExpended = NaN
 							dragLosses = 189.13642750197249
-							gravityLosses = 501.70956857721779
+							gravityLosses = 1060.4303874176476
 							steeringLosses = NaN
 							markLAN = 259.55950012207029
 							markLatitude = -0.09724922310609227
@@ -7219,8 +7069,8 @@ GAME
 				attN = top, -1
 				mass = 0.0500000007
 				shielded = False
-				temp = 227.07819954579034
-				tempExt = 227.73609822446477
+				temp = 222.71977339696758
+				tempExt = 222.61444686202367
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -7245,7 +7095,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -7313,8 +7163,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 226.22895435287541
-				tempExt = 227.00807213197029
+				temp = 221.415803625264
+				tempExt = 221.45301430298821
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -7431,8 +7281,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 226.22916171318914
-				tempExt = 227.00817903873647
+				temp = 221.41578402705892
+				tempExt = 221.45300429833509
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -7559,9 +7409,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = -0.123955943
-				yaw = -0.16192019
-				roll = -0.00140694797
+				pitch = 0
+				yaw = 0
+				roll = 0
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
