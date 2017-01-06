@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 4
+	launchID = 7
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	versionFull = 1.2.2.1622 (WindowsPlayer x64)
@@ -178,18 +178,31 @@ GAME
 			}
 			RecordsAltitude
 			{
-				reached = 431.87856079091893
-				record = 2944.7616675118916
+				completed = 1360.134570311656
+				record = 70000
 			}
 			RecordsSpeed
 			{
-				reached = 411.25999999991592
-				record = 273.93500726673625
+				reached = 1630.8954907217517
+				record = 1123.7960408255483
 			}
 			RecordsDistance
 			{
-				reached = 732.06704711877944
-				record = 1090.5152589884103
+				reached = 1667.3378002920338
+				record = 22858.521884743368
+			}
+			ReachedSpace
+			{
+				completedManned = 1360.2945703116559
+				vessel
+				{
+					name = 3
+					flag = Squad/Flags/default
+				}
+				crew
+				{
+					crews = Jebediah Kerman
+				}
 			}
 			Kerbin
 			{
@@ -216,6 +229,14 @@ GAME
 						crews = Jebediah Kerman
 					}
 				}
+				Spacewalk
+				{
+					completed = 1366.7589916983702
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
 				SurfaceEVA
 				{
 					completed = 314.82000000000363
@@ -231,7 +252,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 59.9299126
+		sci = 79.4991302
 		Tech
 		{
 			id = start
@@ -245,6 +266,86 @@ GAME
 			part = GooExperiment
 			part = trussPiece1x
 			part = parachuteSingle
+		}
+		Tech
+		{
+			id = engineering101
+			state = Available
+			cost = 5
+			part = SurfAntenna
+			part = stackDecoupler
+			part = longAntenna
+			part = sensorThermometer
+			part = KIS.wrench
+			part = KIS.guide
+		}
+		Tech
+		{
+			id = survivability
+			state = Available
+			cost = 15
+			part = ServiceBay.125
+			part = parachuteRadial
+			part = radialDrogue
+			part = miniLandingLeg
+			part = radPanelSm
+			part = sensorBarometer
+			part = HeatShield1
+			part = HeatShield0
+		}
+		Tech
+		{
+			id = basicRocketry
+			state = Available
+			cost = 5
+			part = fuelTankSmallFlat
+			part = solidBooster
+			part = liquidEngine2
+		}
+		Tech
+		{
+			id = generalRocketry
+			state = Available
+			cost = 20
+			part = fuelTankSmall
+			part = solidBooster1-1
+			part = liquidEngine
+		}
+		Tech
+		{
+			id = basicScience
+			state = Available
+			cost = 45
+			part = HighGainAntenna5
+			part = radPanelLg
+			part = radPanelEdge
+			part = ScienceBox
+			part = science.module
+			part = batteryPack
+			part = probeCoreSphere
+		}
+		Tech
+		{
+			id = advRocketry
+			state = Available
+			cost = 45
+			part = fuelTank
+			part = radialLiquidEngine1-2
+			part = liquidEngine3
+		}
+		Tech
+		{
+			id = generalConstruction
+			state = Available
+			cost = 45
+			part = launchClamp1
+			part = largeAdapter
+			part = decoupler1-2
+			part = Mk1FuselageStructural
+			part = strutConnector
+			part = MK1CrewCabin
+			part = KIS.ContainerMount1
+			part = KIS.Container1
 		}
 		Science
 		{
@@ -291,9 +392,9 @@ GAME
 			id = recovery@KerbinFlew
 			title = Recovery of a vessel that survived a flight.
 			dsc = 1
-			scv = 0.00462961197
+			scv = 0.000771601975
 			sbv = 5
-			sci = 5.97222233
+			sci = 5.99537039
 			cap = 6
 		}
 		Science
@@ -351,9 +452,9 @@ GAME
 			id = mysteryGoo@KerbinSrfLandedKSC
 			title = Mystery Goo™ Observation from KSC
 			dsc = 1
-			scv = 1
+			scv = 0.230769247
 			sbv = 0.300000012
-			sci = 0
+			sci = 3
 			cap = 3.9000001
 		}
 		Science
@@ -361,9 +462,9 @@ GAME
 			id = surfaceSample@KerbinSrfLandedKSC
 			title = Surface Sample from KSC
 			dsc = 1
-			scv = 0.25
+			scv = 0.0625
 			sbv = 0.300000012
-			sci = 9
+			sci = 11.25
 			cap = 12
 		}
 		Science
@@ -395,6 +496,296 @@ GAME
 			sbv = 0.699999988
 			sci = 5.5999999
 			cap = 5.5999999
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedLaunchPad
+			title = Temperature Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedLaunchPad
+			title = Atmospheric Pressure Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingLowShores
+			title = Temperature Scan while flying over Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 5.5999999
+			cap = 5.5999999
+		}
+		Science
+		{
+			id = barometerScan@KerbinFlyingLow
+			title = Atmospheric Pressure Scan while flying at Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 8.39999962
+			cap = 8.39999962
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedKSC
+			title = Temperature Scan from KSC
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedKSC
+			title = Atmospheric Pressure Scan from KSC
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinSrfLandedLaunchPad
+			title = Materials Study from LaunchPad
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.300000012
+			sci = 7.50000048
+			cap = 9.60000038
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinFlyingLow
+			title = Materials Study while flying at Kerbin
+			dsc = 1
+			scv = 0.0478515476
+			sbv = 0.699999988
+			sci = 21.328125
+			cap = 22.3999996
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingHigh
+			title = Crew Report from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.899999976
+			sci = 4.5
+			cap = 4.5
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinFlyingHigh
+			title = Materials Study from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0.218749985
+			sbv = 0.899999976
+			sci = 22.5
+			cap = 28.7999992
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinFlyingHigh
+			title = Mystery Goo™ Observation from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0.0532543957
+			sbv = 0.899999976
+			sci = 11.0769234
+			cap = 11.6999998
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingHigh
+			title = Temperature Scan from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.899999976
+			sci = 7.19999981
+			cap = 7.19999981
+		}
+		Science
+		{
+			id = barometerScan@KerbinFlyingHigh
+			title = Atmospheric Pressure Scan from Kerbin's upper atmosphere
+			dsc = 1
+			scv = 0
+			sbv = 0.899999976
+			sci = 10.7999992
+			cap = 10.7999992
+		}
+		Science
+		{
+			id = crewReport@KerbinInSpaceLow
+			title = Crew Report while in space near Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 5
+			cap = 5
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinInSpaceLow
+			title = Materials Study while in space near Kerbin
+			dsc = 1
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 32
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinInSpaceLow
+			title = Mystery Goo™ Observation while in space near Kerbin
+			dsc = 1
+			scv = 0.0532544218
+			sbv = 1
+			sci = 12.3076925
+			cap = 13
+		}
+		Science
+		{
+			id = temperatureScan@KerbinInSpaceLow
+			title = Temperature Scan while in space near Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = barometerScan@KerbinInSpaceLow
+			title = Atmospheric Pressure Scan while in space near Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 12
+			cap = 12
+		}
+		Science
+		{
+			id = surfaceSample@KerbinInSpaceLow
+			title = Surface Sample while in space near Kerbin
+			dsc = 1
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 40
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowShores
+			title = EVA Report from space just above Kerbin's Shores
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingLowGrasslands
+			title = Crew Report while flying over Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 3.5
+			cap = 3.5
+		}
+		Science
+		{
+			id = temperatureScan@KerbinFlyingLowGrasslands
+			title = Temperature Scan while flying over Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.699999988
+			sci = 5.5999999
+			cap = 5.5999999
+		}
+		Science
+		{
+			id = crewReport@KerbinSrfLandedGrasslands
+			title = Crew Report from Kerbin's Grasslands
+			dsc = 1
+			scv = 1
+			sbv = 0.300000012
+			sci = 0
+			cap = 1.5
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinSrfLandedGrasslands
+			title = Mystery Goo™ Observation from Kerbin's Grasslands
+			dsc = 1
+			scv = 1
+			sbv = 0.300000012
+			sci = 0
+			cap = 3.9000001
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedGrasslands
+			title = Temperature Scan from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedGrasslands
+			title = Atmospheric Pressure Scan from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 3.60000014
+			cap = 3.60000014
+		}
+		Science
+		{
+			id = surfaceSample@KerbinSrfLandedGrasslands
+			title = Surface Sample from Kerbin's Grasslands
+			dsc = 1
+			scv = 0.0625
+			sbv = 0.300000012
+			sci = 11.25
+			cap = 12
+		}
+		Science
+		{
+			id = evaReport@KerbinSrfLandedGrasslands
+			title = EVA Report from Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 0.300000012
+			sci = 2.4000001
+			cap = 2.4000001
+		}
+		Science
+		{
+			id = recovery@KerbinSubOrbited
+			title = Recovery of a vessel after a sub-orbital flight.
+			dsc = 1
+			scv = 0.02777775
+			sbv = 8
+			sci = 9.33333397
+			cap = 9.60000038
 		}
 	}
 	SCENARIO
@@ -637,7 +1028,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 884.45491943317222
+		UT = 2575.5631665022647
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -1352,7 +1743,7 @@ GAME
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 3
+				flight = 6
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = ExitVessel,Kerbin
@@ -1368,10 +1759,27 @@ GAME
 				2 = ExitVessel,Kerbin
 				2 = BoardVessel,Kerbin
 				2 = Recover
+				3 = Flight,Kerbin
+				3 = Land,Kerbin
+				3 = ExitVessel,Kerbin
+				3 = BoardVessel,Kerbin
+				3 = Recover
+				4 = Flight,Kerbin
+				4 = Land,Kerbin
+				4 = Suborbit,Kerbin
+				4 = ExitVessel,Kerbin
+				4 = BoardVessel,Kerbin
+				4 = Recover
+				5 = Flight,Kerbin
+				5 = Suborbit,Kerbin
+				5 = ExitVessel,Kerbin
+				5 = BoardVessel,Kerbin
+				5 = Land,Kerbin
+				5 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 3
+				flight = 6
 			}
 		}
 		KERBAL
