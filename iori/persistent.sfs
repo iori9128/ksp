@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/default
-	launchID = 7
+	launchID = 10
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	versionFull = 1.2.2.1622 (WindowsPlayer x64)
@@ -152,14 +152,6 @@ GAME
 	}
 	SCENARIO
 	{
-		name = ScenarioNewGameIntro
-		scene = 5, 6, 8
-		kscComplete = True
-		editorComplete = True
-		tsComplete = False
-	}
-	SCENARIO
-	{
 		name = ProgressTracking
 		scene = 7, 8, 5
 		Progress
@@ -183,13 +175,13 @@ GAME
 			}
 			RecordsSpeed
 			{
-				reached = 1630.8954907217517
-				record = 1123.7960408255483
+				completed = 29110.148585387094
+				record = 2500
 			}
 			RecordsDistance
 			{
-				reached = 1667.3378002920338
-				record = 22858.521884743368
+				completed = 26286.849984306773
+				record = 100000
 			}
 			ReachedSpace
 			{
@@ -252,7 +244,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 79.4991302
+		sci = 30.1551819
 		Tech
 		{
 			id = start
@@ -346,6 +338,35 @@ GAME
 			part = MK1CrewCabin
 			part = KIS.ContainerMount1
 			part = KIS.Container1
+		}
+		Tech
+		{
+			id = stability
+			state = Available
+			cost = 18
+			part = radialDecoupler
+			part = winglet
+			part = noseCone
+		}
+		Tech
+		{
+			id = heavyRocketry
+			state = Available
+			cost = 90
+			part = MassiveBooster
+			part = engineLargeSkipper
+			part = liquidEngine2-2
+		}
+		Tech
+		{
+			id = fuelSystems
+			state = Available
+			cost = 90
+			part = fuelTank4-2
+			part = fuelTank1-2
+			part = fuelTank2-2
+			part = fuelTank.long
+			part = fuelLine
 		}
 		Science
 		{
@@ -592,9 +613,9 @@ GAME
 			id = mobileMaterialsLab@KerbinFlyingHigh
 			title = Materials Study from Kerbin's upper atmosphere
 			dsc = 1
-			scv = 0.218749985
+			scv = 0.0478515364
 			sbv = 0.899999976
-			sci = 22.5
+			sci = 27.421875
 			cap = 28.7999992
 		}
 		Science
@@ -642,9 +663,9 @@ GAME
 			id = mobileMaterialsLab@KerbinInSpaceLow
 			title = Materials Study while in space near Kerbin
 			dsc = 1
-			scv = 1
+			scv = 0.0478515625
 			sbv = 1
-			sci = 0
+			sci = 30.46875
 			cap = 32
 		}
 		Science
@@ -732,9 +753,9 @@ GAME
 			id = mysteryGoo@KerbinSrfLandedGrasslands
 			title = Mystery Goo™ Observation from Kerbin's Grasslands
 			dsc = 1
-			scv = 1
+			scv = 0.230769247
 			sbv = 0.300000012
-			sci = 0
+			sci = 3
 			cap = 3.9000001
 		}
 		Science
@@ -782,10 +803,100 @@ GAME
 			id = recovery@KerbinSubOrbited
 			title = Recovery of a vessel after a sub-orbital flight.
 			dsc = 1
-			scv = 0.02777775
+			scv = 0.000128646687
 			sbv = 8
-			sci = 9.33333397
+			sci = 9.59876537
 			cap = 9.60000038
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceLowGrasslands
+			title = EVA Report from space just above Kerbin's Grasslands
+			dsc = 1
+			scv = 0
+			sbv = 1
+			sci = 8
+			cap = 8
+		}
+		Science
+		{
+			id = crewReport@KerbinInSpaceHigh
+			title = Crew Report while in space high over Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1.5
+			sci = 7.5
+			cap = 7.5
+		}
+		Science
+		{
+			id = mobileMaterialsLab@KerbinInSpaceHigh
+			title = Materials Study while in space high over Kerbin
+			dsc = 1
+			scv = 0.21875
+			sbv = 1.5
+			sci = 37.5
+			cap = 48
+		}
+		Science
+		{
+			id = mysteryGoo@KerbinInSpaceHigh
+			title = Mystery Goo™ Observation while in space high over Kerbin
+			dsc = 1
+			scv = 0.230769232
+			sbv = 1.5
+			sci = 15
+			cap = 19.5
+		}
+		Science
+		{
+			id = temperatureScan@KerbinInSpaceHigh
+			title = Temperature Scan while in space high over Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1.5
+			sci = 12
+			cap = 12
+		}
+		Science
+		{
+			id = barometerScan@KerbinInSpaceHigh
+			title = Atmospheric Pressure Scan while in space high over Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1.5
+			sci = 18
+			cap = 18
+		}
+		Science
+		{
+			id = surfaceSample@KerbinInSpaceHigh
+			title = Surface Sample while in space high over Kerbin
+			dsc = 1
+			scv = 1
+			sbv = 1.5
+			sci = 0
+			cap = 60
+		}
+		Science
+		{
+			id = evaReport@KerbinInSpaceHigh
+			title = EVA Report while in space high over Kerbin
+			dsc = 1
+			scv = 0
+			sbv = 1.5
+			sci = 12
+			cap = 12
+		}
+		Science
+		{
+			id = crewReport@KerbinFlyingLowHighlands
+			title = Crew Report while flying over Kerbin's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 0.699999988
+			sci = 0
+			cap = 3.5
 		}
 	}
 	SCENARIO
@@ -1028,7 +1139,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 2575.5631665022647
+		UT = 29485.815663029476
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -1719,6 +1830,12 @@ GAME
 		ToJPparts = True
 		TriggerTech = True
 		ModuleManager.2.7.5.dll = True
+		MechJeb2 v2.5.1.0 / v / v2.6.0.0 = True
+		MechJeb2 = True
+		ModuleManager.ConfigCache = True
+		ModuleManager.ConfigSHA = True
+		ModuleManager.Physics = True
+		ModuleManager.TechTree = True
 	}
 	ROSTER
 	{
@@ -1743,7 +1860,7 @@ GAME
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 6
+				flight = 9
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = ExitVessel,Kerbin
@@ -1776,10 +1893,28 @@ GAME
 				5 = BoardVessel,Kerbin
 				5 = Land,Kerbin
 				5 = Recover
+				6 = Flight,Kerbin
+				6 = Suborbit,Kerbin
+				6 = ExitVessel,Kerbin
+				6 = BoardVessel,Kerbin
+				6 = Land,Kerbin
+				6 = Recover
+				7 = Land,Kerbin
+				7 = Flight,Kerbin
+				7 = Suborbit,Kerbin
+				7 = ExitVessel,Kerbin
+				7 = BoardVessel,Kerbin
+				7 = Recover
+				8 = Flight,Kerbin
+				8 = Suborbit,Kerbin
+				8 = ExitVessel,Kerbin
+				8 = BoardVessel,Kerbin
+				8 = Land,Kerbin
+				8 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 6
+				flight = 9
 			}
 		}
 		KERBAL
