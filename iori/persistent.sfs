@@ -551,7 +551,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 2030.33276
+		sci = 120.332764
 		Tech
 		{
 			id = start
@@ -830,6 +830,69 @@ GAME
 			part = stackSeparatorMini
 			part = adapterSmallMiniTall
 			part = adapterSmallMiniShort
+		}
+		Tech
+		{
+			id = precisionEngineering
+			state = Available
+			cost = 160
+			part = RelayAntenna5
+			part = stackDecouplerMini
+			part = mediumDishAntenna
+			part = strutOcto
+			part = strutCube
+			part = structuralMiniNode
+			part = probeCoreHex
+			part = KIS.bomb1
+		}
+		Tech
+		{
+			id = unmannedTech
+			state = Available
+			cost = 300
+			part = probeCoreOcto2
+			part = probeCoreCube
+			part = mumech.MJ2.AR202.features3
+		}
+		Tech
+		{
+			id = electronics
+			state = Available
+			cost = 300
+			part = RelayAntenna50
+			part = sensorAccelerometer
+			part = HighGainAntenna
+		}
+		Tech
+		{
+			id = largeVolumeContainment
+			state = Available
+			cost = 300
+			part = Size3to2Adapter
+			part = size3Decoupler
+			part = Size3SmallTank
+			part = Size3MediumTank
+			part = KIS.Container2
+		}
+		Tech
+		{
+			id = veryHeavyRocketry
+			state = Available
+			cost = 550
+			part = Size3EngineCluster
+			part = Size3AdvancedEngine
+			part = SSME
+		}
+		Tech
+		{
+			id = fieldScience
+			state = Available
+			cost = 300
+			part = roverWheel1
+			part = roverBody
+			part = seatExternalCmd
+			part = SCANsat.Scanner32
+			part = mumech.MJ2.AR202.features2
 		}
 		Science
 		{
@@ -2863,7 +2926,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 5735078.7466467936
+		UT = 5735127.2266457099
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
