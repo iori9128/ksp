@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/kerbin
-	launchID = 22
+	launchID = 23
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	versionFull = 1.2.2.1622 (WindowsPlayer x64)
@@ -476,6 +476,14 @@ GAME
 						crews = Jebediah Kerman
 					}
 				}
+				Spacewalk
+				{
+					completed = 7528729.5352907209
+					crew
+					{
+						crews = Jebediah Kerman
+					}
+				}
 				SurfaceEVA
 				{
 					completed = 4717000.6580090867
@@ -503,7 +511,7 @@ GAME
 				}
 				Suborbit
 				{
-					completedManned = 4714522.4845833555
+					completed = 4714522.4845833555
 					vessel
 					{
 						name = minmus
@@ -551,7 +559,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 123.6661
+		sci = 245.991699
 		Tech
 		{
 			id = start
@@ -893,6 +901,64 @@ GAME
 			part = seatExternalCmd
 			part = SCANsat.Scanner32
 			part = mumech.MJ2.AR202.features2
+		}
+		Tech
+		{
+			id = specializedConstruction
+			state = Available
+			cost = 160
+			part = stackBiCoupler
+			part = stackPoint1
+			part = dockingPort2
+			part = stackSeparator
+			part = trussAdapter
+			part = fairingSize2
+			part = pointyNoseConeB
+			part = KIS.Container3
+			part = KAS.Strut1
+			part = KAS.Pylon1
+		}
+		Tech
+		{
+			id = highPerformanceFuelSystems
+			state = Available
+			cost = 550
+			part = Size3LargeTank
+		}
+		Tech
+		{
+			id = commandModules
+			state = Available
+			cost = 160
+			part = ServiceBay.250
+			part = mk2LanderCabin
+			part = Mark1-2Pod
+			part = cupola
+		}
+		Tech
+		{
+			id = specializedControl
+			state = Available
+			cost = 160
+			part = rcsTankRadialLong
+			part = vernierEngine
+			part = asasmodule1-2
+			part = avionicsNoseCone
+			part = KAS.Hook.Anchor
+		}
+		Tech
+		{
+			id = advScienceTech
+			state = Available
+			cost = 550
+			part = sensorGravimeter
+			part = SmallTank
+			part = RadialOreTank
+			part = RadialDrill
+			part = MiniISRU
+			part = MiniDrill
+			part = ISRU
+			part = SCANsat.Scanner2
 		}
 		Science
 		{
@@ -1989,9 +2055,9 @@ GAME
 			id = mysteryGoo@MinmusInSpaceHigh
 			title = Mystery Goo™ Observation while in space high over Minmus
 			dsc = 1
-			scv = 0.230769232
+			scv = 0.0532544665
 			sbv = 2.5
-			sci = 25
+			sci = 30.7692299
 			cap = 32.5
 		}
 		Science
@@ -1999,9 +2065,9 @@ GAME
 			id = mobileMaterialsLab@MinmusInSpaceHigh
 			title = Materials Study while in space high over Minmus
 			dsc = 1
-			scv = 0.21875
+			scv = 0.0478515625
 			sbv = 2.5
-			sci = 62.5
+			sci = 76.171875
 			cap = 80
 		}
 		Science
@@ -2039,9 +2105,9 @@ GAME
 			id = mysteryGoo@MinmusInSpaceLow
 			title = Mystery Goo™ Observation while in space near Minmus
 			dsc = 1
-			scv = 0.0532544218
+			scv = 0.0122894878
 			sbv = 4
-			sci = 49.2307701
+			sci = 51.3609467
 			cap = 52
 		}
 		Science
@@ -2049,9 +2115,9 @@ GAME
 			id = mobileMaterialsLab@MinmusInSpaceLow
 			title = Materials Study while in space near Minmus
 			dsc = 1
-			scv = 0.21875
+			scv = 0.0478515625
 			sbv = 4
-			sci = 100
+			sci = 121.875
 			cap = 128
 		}
 		Science
@@ -2399,10 +2465,360 @@ GAME
 			id = recovery@MinmusSurfaced
 			title = Recovery of a vessel returned from the surface of Minmus
 			dsc = 1
-			scv = 0.166666672
+			scv = 0.027777778
 			sbv = 37.5
-			sci = 37.5
+			sci = 43.75
 			cap = 45
+		}
+		Science
+		{
+			id = seismicScan@KerbinSrfLandedLaunchPad
+			title = Seismic Scan from LaunchPad
+			dsc = 2.5
+			scv = 0.0909091458
+			sbv = 0.300000012
+			sci = 6
+			cap = 6.60000038
+		}
+		Science
+		{
+			id = seismicScan@KerbinFlyingLow
+			title = Seismic Scan while flying at Kerbin
+			dsc = 2.5
+			scv = 1
+			sbv = 0.699999988
+			sci = 0
+			cap = 15.3999996
+		}
+		Science
+		{
+			id = seismicScan@KerbinFlyingHigh
+			title = Seismic Scan from Kerbin's upper atmosphere
+			dsc = 2.5
+			scv = 1
+			sbv = 0.899999976
+			sci = 0
+			cap = 19.7999992
+		}
+		Science
+		{
+			id = seismicScan@KerbinInSpaceLow
+			title = Seismic Scan while in space near Kerbin
+			dsc = 2.5
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 22
+		}
+		Science
+		{
+			id = seismicScan@KerbinInSpaceHigh
+			title = Seismic Scan while in space high over Kerbin
+			dsc = 2.5
+			scv = 1
+			sbv = 1.5
+			sci = 0
+			cap = 33
+		}
+		Science
+		{
+			id = seismicScan@MinmusInSpaceHigh
+			title = Seismic Scan while in space high over Minmus
+			dsc = 2.5
+			scv = 1
+			sbv = 2.5
+			sci = 0
+			cap = 55
+		}
+		Science
+		{
+			id = seismicScan@MinmusInSpaceLow
+			title = Seismic Scan while in space near Minmus
+			dsc = 2.5
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 88
+		}
+		Science
+		{
+			id = crewReport@MinmusSrfLandedGreatFlats
+			title = Crew Report from Minmus's Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 25
+			cap = 25
+		}
+		Science
+		{
+			id = barometerScan@MinmusSrfLandedGreatFlats
+			title = Atmospheric Pressure Scan from Minmus's Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 60
+			cap = 60
+		}
+		Science
+		{
+			id = temperatureScan@MinmusSrfLandedGreatFlats
+			title = Temperature Scan from Minmus's Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusSrfLandedGreatFlats
+			title = Mystery Goo™ Observation from Minmus's Great Flats
+			dsc = 1
+			scv = 0.230769232
+			sbv = 5
+			sci = 50
+			cap = 65
+		}
+		Science
+		{
+			id = seismicScan@MinmusSrfLandedGreatFlats
+			title = Seismic Scan from Minmus's Great Flats
+			dsc = 2.5
+			scv = 0.00826443732
+			sbv = 5
+			sci = 109.090912
+			cap = 110
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusSrfLandedGreatFlats
+			title = Materials Study from Minmus's Great Flats
+			dsc = 1
+			scv = 0.21875
+			sbv = 5
+			sci = 125
+			cap = 160
+		}
+		Science
+		{
+			id = surfaceSample@MinmusSrfLandedGreatFlats
+			title = Surface Sample from Minmus's Great Flats
+			dsc = 1
+			scv = 0.25
+			sbv = 5
+			sci = 150
+			cap = 200
+		}
+		Science
+		{
+			id = evaReport@MinmusSrfLandedGreatFlats
+			title = EVA Report from Minmus's Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceLowGreatFlats
+			title = EVA Report from space just above Minmus's Great Flats
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = crewReport@MinmusSrfLandedHighlands
+			title = Crew Report from Minmus's Highlands
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 25
+			cap = 25
+		}
+		Science
+		{
+			id = barometerScan@MinmusSrfLandedHighlands
+			title = Atmospheric Pressure Scan from Minmus's Highlands
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 60
+			cap = 60
+		}
+		Science
+		{
+			id = temperatureScan@MinmusSrfLandedHighlands
+			title = Temperature Scan from Minmus's Highlands
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusSrfLandedHighlands
+			title = Mystery Goo™ Observation from Minmus's Highlands
+			dsc = 1
+			scv = 0.230769232
+			sbv = 5
+			sci = 50
+			cap = 65
+		}
+		Science
+		{
+			id = seismicScan@MinmusSrfLandedHighlands
+			title = Seismic Scan from Minmus's Highlands
+			dsc = 2.5
+			scv = 1
+			sbv = 5
+			sci = 0
+			cap = 110
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusSrfLandedHighlands
+			title = Materials Study from Minmus's Highlands
+			dsc = 1
+			scv = 0.21875
+			sbv = 5
+			sci = 125
+			cap = 160
+		}
+		Science
+		{
+			id = surfaceSample@MinmusSrfLandedHighlands
+			title = Surface Sample from Minmus's Highlands
+			dsc = 1
+			scv = 0.25
+			sbv = 5
+			sci = 150
+			cap = 200
+		}
+		Science
+		{
+			id = evaReport@MinmusSrfLandedHighlands
+			title = EVA Report from Minmus's Highlands
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceLowHighlands
+			title = EVA Report from space just above Minmus's Highlands
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = crewReport@MinmusSrfLandedPoles
+			title = Crew Report from Minmus's Poles
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 25
+			cap = 25
+		}
+		Science
+		{
+			id = barometerScan@MinmusSrfLandedPoles
+			title = Atmospheric Pressure Scan from Minmus's Poles
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 60
+			cap = 60
+		}
+		Science
+		{
+			id = temperatureScan@MinmusSrfLandedPoles
+			title = Temperature Scan from Minmus's Poles
+			dsc = 1
+			scv = 1
+			sbv = 5
+			sci = 0
+			cap = 40
+		}
+		Science
+		{
+			id = mysteryGoo@MinmusSrfLandedPoles
+			title = Mystery Goo™ Observation from Minmus's Poles
+			dsc = 1
+			scv = 0.0532544665
+			sbv = 5
+			sci = 61.5384598
+			cap = 65
+		}
+		Science
+		{
+			id = seismicScan@MinmusSrfLandedPoles
+			title = Seismic Scan from Minmus's Poles
+			dsc = 2.5
+			scv = 1
+			sbv = 5
+			sci = 0
+			cap = 110
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MinmusSrfLandedPoles
+			title = Materials Study from Minmus's Poles
+			dsc = 1
+			scv = 0.21875
+			sbv = 5
+			sci = 125
+			cap = 160
+		}
+		Science
+		{
+			id = surfaceSample@MinmusSrfLandedPoles
+			title = Surface Sample from Minmus's Poles
+			dsc = 1
+			scv = 0.25
+			sbv = 5
+			sci = 150
+			cap = 200
+		}
+		Science
+		{
+			id = evaReport@MinmusSrfLandedPoles
+			title = EVA Report from Minmus's Poles
+			dsc = 1
+			scv = 0
+			sbv = 5
+			sci = 40
+			cap = 40
+		}
+		Science
+		{
+			id = evaReport@MinmusInSpaceLowPoles
+			title = EVA Report from space just above Minmus's Poles
+			dsc = 1
+			scv = 0
+			sbv = 4
+			sci = 32
+			cap = 32
+		}
+		Science
+		{
+			id = seismicScan@KerbinSrfSplashed
+			title = Seismic Scan from Kerbin's oceans
+			dsc = 2.5
+			scv = 1
+			sbv = 0.400000006
+			sci = 0
+			cap = 8.80000019
 		}
 	}
 	SCENARIO
@@ -2625,7 +3041,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 585224613
+		lastSeed = 1522420464
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -2737,7 +3153,7 @@ GAME
 			{
 				Name = Minmus
 				Disabled = False
-				LandingTarget = 29.0000,152.7500
+				LandingTarget = 87.5000,-14.0000
 				MinHeightRange = -500
 				MaxHeightRange = 5500
 				PaletteName = Paired
@@ -2926,11 +3342,11 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 7309516.9266906027
+		UT = 7711412.7510482855
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
-		commNetUIModeFlight = Path
+		commNetUIModeFlight = None
 		VESSEL
 		{
 			pid = b28939e5f79243b48c7fff2b26d4b9e8
@@ -4931,13 +5347,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.155810323588
+				SMA = 30000.155810322565
 				ECC = 0.99999999999999989
-				INC = 0.045205618739840706
+				INC = 0.045205618747903083
 				LPE = 90
-				LAN = 103.4594874573624
+				LAN = 85.00382331132397
 				MNA = 3.1415926207170166
-				EPH = 7309471.2666916233
+				EPH = 7711400.1310485676
 				REF = 3
 			}
 			PART
@@ -5094,13 +5510,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 9.1161139508075486
-				LPE = 90
-				LAN = 126.53892205607167
+				INC = 9.1161139508082716
+				LPE = 90.000000000000014
+				LAN = 108.08325791003119
 				MNA = 0
-				EPH = 7309471.2666916233
+				EPH = 7711400.1310485676
 				REF = 3
 			}
 			PART
@@ -5257,13 +5673,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 2.5236774940132691
+				SMA = 32229.48358630139
+				ECC = 0.99999999999999989
+				INC = 2.5236774940131244
 				LPE = 270
-				LAN = 166.62698445604553
-				MNA = 0
-				EPH = 7309471.2666916233
+				LAN = 148.17132031000847
+				MNA = -3.1415926207170166
+				EPH = 7711400.1310485676
 				REF = 3
 			}
 			PART
@@ -5420,13 +5836,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.186866018612
+				SMA = 30000.186866017131
 				ECC = 0.99999999999999989
-				INC = 29.922490765584893
+				INC = 29.922490765586403
 				LPE = 270
-				LAN = 255.7281205051882
+				LAN = 237.27245635915193
 				MNA = 3.1415926207170166
-				EPH = 7309471.2666916233
+				EPH = 7711400.1310485676
 				REF = 3
 			}
 			PART
@@ -5546,99 +5962,6 @@ GAME
 				trimYaw = 0
 				trimRoll = 0
 				mainThrottle = 0
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 4032a59db8eb44f09875ba339601c21e
-			name = Ast. EOL-990
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 5699119.6951658903
-			lct = 5699119.6951658903
-			lastUT = -1
-			root = 0
-			lat = -0.30209191165948457
-			lon = -17.904256959518065
-			alt = 15341415450.620626
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.546596885,-0.77925396,0.284854889,0.113369875
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 14658846349.617645
-				ECC = 0.084511166492873699
-				INC = 0.69100649468443953
-				LPE = 348.61941823523796
-				LAN = 205.43936869374502
-				MNA = 0.43742224883760711
-				EPH = 10321779.082372922
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 803148722
-				mid = 803148722
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 5699119.6951658903
-				lifetime = 1718815.6494140625
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
 			}
 			VESSELMODULES
 			{
@@ -7165,99 +7488,6 @@ GAME
 		}
 		VESSEL
 		{
-			pid = e20e296fe6dc442299bb21401c7005b5
-			name = Ast. TAI-090
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 6306098.304835842
-			lct = 6306098.304835842
-			lastUT = -1
-			root = 0
-			lat = 1.3453232958758081
-			lon = -147.51584847574907
-			alt = 14283578504.98012
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.0483299382,0.489556521,-0.172090828,0.853453755
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 14765981467.12048
-				ECC = 0.078705862894717926
-				INC = 1.3528200981544249
-				LPE = 179.54727912437946
-				LAN = 331.53024899561547
-				MNA = -0.027905613522639556
-				EPH = 8418107.0572772473
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1496621457
-				mid = 1496621457
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 6306098.304835842
-				lifetime = 1112781.3354492188
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
 			pid = d0e20464104341f3a4dc0a170378f1e4
 			name = minmus net Relay
 			type = Relay
@@ -8388,23 +8618,23 @@ GAME
 		}
 		VESSEL
 		{
-			pid = b34e35cc8a1d4a5489a3571776666bad
-			name = Ast. HQU-276
+			pid = f13e092f5ee24e48afbe7aa6b704f9e0
+			name = Ast. TIL-053
 			type = SpaceObject
 			sit = ORBITING
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 7303116.863801932
-			lct = 7303116.863801932
+			met = 7434918.598235107
+			lct = 7434918.598235107
 			lastUT = -1
 			root = 0
-			lat = 1.9345952700759688
-			lon = 149.12412913253704
-			alt = 16071061524.151701
+			lat = 1.4165302014297196
+			lon = 31.919107303296688
+			alt = 14061813368.763311
 			hgt = -1
 			nrm = 0,1,0
-			rot = 0.00834388938,0.0185319297,0.798173964,0.6020841
+			rot = 0.111288086,0.245203108,0.890557945,0.366601855
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -8412,21 +8642,21 @@ GAME
 			ctrl = False
 			ORBIT
 			{
-				SMA = 15709978524.717619
-				ECC = 0.13927538663572428
-				INC = 2.0417179354271529
-				LPE = 185.42212276980675
-				LAN = 43.704425273706534
-				MNA = -0.16710897623907503
-				EPH = 10137860.772493338
+				SMA = 15912705113.386721
+				ECC = 0.14946814250458715
+				INC = 1.6404903956690207
+				LPE = 175.09653037535125
+				LAN = 347.38734642744669
+				MNA = 0.14380360477142579
+				EPH = 9050799.7139577642
 				REF = 0
 			}
 			PART
 			{
 				name = PotatoRoid
 				cid = 0
-				uid = 585224613
-				mid = 585224613
+				uid = 1451539694
+				mid = 1451539694
 				launchID = 0
 				parent = 0
 				position = 0,0,0
@@ -8461,16 +8691,691 @@ GAME
 			DISCOVERY
 			{
 				state = 1
-				lastObservedTime = 7303116.863801932
-				lifetime = 188832.27996826172
+				lastObservedTime = 7434918.598235107
+				lifetime = 960944.56787109375
 				refTime = 1728000
-				size = 0
+				size = 4
 			}
 			FLIGHTPLAN
 			{
 			}
 			CTRLSTATE
 			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 9e6f34465bc54ae59d94400a148e12ae
+			name = Ast. IAA-707
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 7470318.598235107
+			lct = 7470318.598235107
+			lastUT = -1
+			root = 0
+			lat = -0.88454798314170735
+			lon = 9.0044244823389032
+			alt = 14163631363.027283
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.486503631,-0.417058408,0.331037432,0.692669272
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14153665052.770561
+				ECC = 0.041450649066592148
+				INC = 1.5008891771135675
+				LPE = 335.77341608420051
+				LAN = 258.16531745334771
+				MNA = 0.45534403073939722
+				EPH = 11312596.576750733
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 146962685
+				mid = 146962685
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 7470318.598235107
+				lifetime = 1053368.2342529297
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = c74954f1f41f4514af8bb2c10582e75b
+			name = Ast. IMR-109
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 7494154.024016357
+			lct = 7494154.024016357
+			lastUT = -1
+			root = 0
+			lat = 1.3965860510280128
+			lon = -5.8897888355709878
+			alt = 15132504832.628807
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.264170438,0.342276335,-0.519556284,0.736968219
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14978030808.559484
+				ECC = 0.096308332814635536
+				INC = 1.3968801942665543
+				LPE = 200.80824781811251
+				LAN = 30.414628998885632
+				MNA = -0.27258366184718369
+				EPH = 10031268.910490967
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1522420464
+				mid = 1522420464
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 7494154.024016357
+				lifetime = 1012940.4144287109
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 00000000000000000000000000000000
+			name = minmus Great Flats
+			type = Flag
+			sit = LANDED
+			landed = True
+			landedAt = 
+			splashed = False
+			met = 207.41999536380172
+			lct = 7524806.0372788738
+			lastUT = 7525013.4572742376
+			root = 0
+			lat = 6.8101604104397433
+			lon = -100.86550217170573
+			alt = 0.34900065133842872
+			hgt = 0.379839242
+			nrm = 0.00789780915,0.997272074,-0.0733917952
+			rot = 0.309023827,-0.690419734,0.606111586,-0.245873362
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 6.810160410439277
+				LPE = 270
+				LAN = 354.58121014226975
+				MNA = 0
+				EPH = 7711400.1310485676
+				REF = 3
+			}
+			PART
+			{
+				name = flag
+				cid = 4270526850
+				uid = 3292398372
+				mid = 2111666431
+				launchID = 22
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/kerbin
+				rTrf = flag(Clone)(Clone)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Jebediah Kerman
+					PlaqueText = 
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 00000000000000000000000000000000
+			name = minmus Highlands
+			type = Flag
+			sit = LANDED
+			landed = True
+			landedAt = 
+			splashed = False
+			met = 365.37999183312058
+			lct = 7526323.7675802941
+			lastUT = 7526689.1475721272
+			root = 0
+			lat = 51.843652923338176
+			lon = -41.513513903692974
+			alt = 4970.0939579384431
+			hgt = 0.382272124
+			nrm = -0.0271840394,0.99839437,-0.0496960282
+			rot = -0.254555047,-0.314201057,-0.146783367,0.902737021
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 51.843652923339164
+				LPE = 270
+				LAN = 53.933198410281136
+				MNA = 0
+				EPH = 7711400.1310485676
+				REF = 3
+			}
+			PART
+			{
+				name = flag
+				cid = 4269540490
+				uid = 31033846
+				mid = 2111666431
+				launchID = 22
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/kerbin
+				rTrf = flag(Clone)(Clone)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Jebediah Kerman
+					PlaqueText = 
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 00000000000000000000000000000000
+			name = minmus Poles
+			type = Flag
+			sit = LANDED
+			landed = True
+			landedAt = 
+			splashed = False
+			met = 118.55999734997749
+			lct = 7527473.2776422901
+			lastUT = 7527591.8376396401
+			root = 0
+			lat = 87.495965446891063
+			lon = -16.51420350848478
+			alt = 3152.5845540622613
+			hgt = 0.378935844
+			nrm = 0.0577960052,0.994394064,-0.0885439515
+			rot = -0.0216851626,-0.998864055,0.0410375446,-0.0107867811
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = 87.495965446894544
+				LPE = 270
+				LAN = 78.932508805490045
+				MNA = 0
+				EPH = 7711400.1310485676
+				REF = 3
+			}
+			PART
+			{
+				name = flag
+				cid = 4268444140
+				uid = 1880775429
+				mid = 2111666431
+				launchID = 22
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/kerbin
+				rTrf = flag(Clone)(Clone)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Jebediah Kerman
+					PlaqueText = 
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
 			}
 			VESSELMODULES
 			{
@@ -8556,7 +9461,7 @@ GAME
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 20
+				flight = 21
 				0 = Flight,Kerbin
 				0 = Land,Kerbin
 				0 = ExitVessel,Kerbin
@@ -8699,10 +9604,24 @@ GAME
 				19 = Flyby,Mun
 				19 = Escape,Mun
 				19 = Recover
+				20 = Flight,Kerbin
+				20 = Land,Kerbin
+				20 = Suborbit,Kerbin
+				20 = Orbit,Kerbin
+				20 = Flyby,Minmus
+				20 = Escape,Minmus
+				20 = Orbit,Minmus
+				20 = Suborbit,Minmus
+				20 = Land,Minmus
+				20 = ExitVessel,Minmus
+				20 = PlantFlag,Minmus
+				20 = BoardVessel,Minmus
+				20 = Flyby,Kerbin
+				20 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 20
+				flight = 21
 			}
 		}
 		KERBAL
@@ -8754,7 +9673,7 @@ GAME
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 4
+				flight = 5
 				0 = Recover
 				1 = Land,Kerbin
 				1 = Recover
@@ -8784,10 +9703,22 @@ GAME
 				3 = Flyby,Kerbin
 				3 = Escape,Kerbin
 				3 = Recover
+				4 = Flight,Kerbin
+				4 = Land,Kerbin
+				4 = Suborbit,Kerbin
+				4 = Orbit,Kerbin
+				4 = Flyby,Minmus
+				4 = Escape,Minmus
+				4 = Orbit,Minmus
+				4 = Suborbit,Minmus
+				4 = Land,Minmus
+				4 = PlantFlag,Minmus
+				4 = Flyby,Kerbin
+				4 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 4
+				flight = 5
 			}
 		}
 		KERBAL
