@@ -8,7 +8,7 @@ GAME
 	Mode = SCIENCE_SANDBOX
 	Status = 1
 	Seed = 180669740
-	scene = 5
+	scene = 7
 	editor = None
 	flag = Squad/Flags/kerbin
 	launchID = 32
@@ -4817,6 +4817,36 @@ GAME
 			sci = 0
 			cap = 40
 		}
+		Science
+		{
+			id = gravityScan@DunaInSpaceLowWesternCanyon
+			title = Gravity Scan from space just above Duna's Western Canyon
+			dsc = 3
+			scv = 1
+			sbv = 7
+			sci = 0
+			cap = 154
+		}
+		Science
+		{
+			id = gravityScan@DunaInSpaceLowCraters
+			title = Gravity Scan from space just above Duna's Craters
+			dsc = 3
+			scv = 1
+			sbv = 7
+			sci = 0
+			cap = 154
+		}
+		Science
+		{
+			id = gravityScan@DunaInSpaceLowMidlandCanyon
+			title = Gravity Scan from space just above Duna's Midland Canyon
+			dsc = 3
+			scv = 1
+			sbv = 7
+			sci = 0
+			cap = 154
+		}
 	}
 	SCENARIO
 	{
@@ -5399,8 +5429,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 91784709.437874332
-		activeVessel = 27
+		UT = 91793423.440382063
+		activeVessel = 26
 		mapViewFiltering = 7165
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
@@ -12967,33 +12997,33 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 15287.194136381149
+			met = 24301.29000928998
 			lct = 91769122.130372778
-			lastUT = 91784409.344509155
+			lastUT = 91793423.440382063
 			root = 0
-			lat = -0.06366178989865301
-			lon = 154.23427857276468
-			alt = 275678.87060131389
+			lat = 0.72097835542588651
+			lon = -13.575837493447645
+			alt = 264543.84699285752
 			hgt = -1
-			nrm = -0.330455065,-0.256783992,-0.908218801
-			rot = 0.28557241,-0.654828131,0.245908558,-0.655116498
-			CoM = -4.76837158E-06,-3.97272754,2.38418579E-07
+			nrm = -0.431212813,0.218410417,0.875415683
+			rot = 0.51546371,-0.366990745,0.719585836,-0.286026597
+			CoM = -2.41994858E-05,-4.00329351,3.14414501E-05
 			stg = 3
 			prst = False
-			ref = 0
+			ref = 2119294833
 			ctrl = True
-			cPch = 0.2
-			cHdg = 0.3
+			cPch = 0.08000013
+			cHdg = 3.357999
 			cMod = 0
 			ORBIT
 			{
-				SMA = 601125.39923111792
-				ECC = 0.035803106300810426
-				INC = 0.78662909101377543
-				LPE = 107.32427449190803
-				LAN = 25.990784719075691
-				MNA = 1.2803589684858272
-				EPH = 91784409.344509155
+				SMA = 601173.70324688731
+				ECC = 0.035882297131425052
+				INC = 0.78759534451434809
+				LPE = 107.19421421193552
+				LAN = 26.06838933761793
+				MNA = -0.66759834537392426
+				EPH = 91793423.440382063
 				REF = 6
 			}
 			PART
@@ -13020,8 +13050,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 188.8197363851022
-				tempExt = 188.82073710657954
+				temp = 115.86347687550985
+				tempExt = 115.95408057611476
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13029,7 +13059,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Flags/kerbin
-				rTrf = dockingPort2 (duna land Ship)
+				rTrf = dockingPort2 (duna base)
 				modCost = 0
 				EVENTS
 				{
@@ -13104,8 +13134,8 @@ GAME
 				attN = top, 0
 				mass = 4
 				shielded = False
-				temp = 188.8198937201781
-				tempExt = 188.88921766047963
+				temp = 115.88413203997736
+				tempExt = 115.98218808561067
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13115,6 +13145,7 @@ GAME
 				flag = Squad/Flags/kerbin
 				rTrf = Mark1-2Pod
 				modCost = 0
+				crew = Jebediah Kerman
 				crew = Bill Kerman
 				crew = Bob Kerman
 				EVENTS
@@ -13154,7 +13185,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Idle
+					stateString = Running
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -13271,6 +13302,256 @@ GAME
 						xmit = 0.400000006
 						xmitBonus = 0
 						title = Gravity Scan while in space high over Duna's Western Canyon
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@DunaSrfLandedLowlands
+						xmit = 0.600000024
+						xmitBonus = 0
+						title = Atmosphere Analysis from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 50
+						subjectID = seismicScan@DunaSrfLandedLowlands
+						xmit = 0.449999988
+						xmitBonus = 1.0002389
+						title = Seismic Scan from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = temperatureScan@DunaSrfLandedLowlands
+						xmit = 0.5
+						xmitBonus = 1.0002389
+						title = Temperature Scan from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@DunaSrfLandedLowlands
+						xmit = 0.5
+						xmitBonus = 1.00023901
+						title = Atmospheric Pressure Scan from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@KerbinFlyingLowShores
+						xmit = 0.600000024
+						xmitBonus = 1.00023913
+						title = Atmosphere Analysis while flying over Kerbin's Shores
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@KerbinFlyingLowWater
+						xmit = 0.600000024
+						xmitBonus = 1.00023913
+						title = Atmosphere Analysis while flying over Kerbin's Water
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@KerbinInSpaceLowWater
+						xmit = 0.400000006
+						xmitBonus = 1.00023913
+						title = Gravity Scan from space just above Kerbin's Water
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@KerbinInSpaceLowShores
+						xmit = 0.400000006
+						xmitBonus = 1.00023913
+						title = Gravity Scan from space just above Kerbin's Shores
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 25
+						subjectID = mobileMaterialsLab@SunInSpaceHigh
+						xmit = 0.349999994
+						xmitBonus = 1.00023913
+						title = Materials Study while in space high over the Sun
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 25
+						subjectID = mobileMaterialsLab@DunaInSpaceHigh
+						xmit = 0.349999994
+						xmitBonus = 1.00023913
+						title = Materials Study while in space high over Duna
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 5
+						subjectID = crewReport@DunaFlyingHigh
+						xmit = 1
+						xmitBonus = 1
+						title = Crew Report from Duna's upper atmosphere
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = temperatureScan@DunaFlyingHigh
+						xmit = 0.5
+						xmitBonus = 1.00023913
+						title = Temperature Scan from Duna's upper atmosphere
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@DunaFlyingHigh
+						xmit = 0.5
+						xmitBonus = 1.00023913
+						title = Atmospheric Pressure Scan from Duna's upper atmosphere
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@DunaFlyingHighHighlands
+						xmit = 0.600000024
+						xmitBonus = 1.00023913
+						title = Atmosphere Analysis from the upper atmosphere over Duna's Highlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@DunaFlyingHighMidlands
+						xmit = 0.600000024
+						xmitBonus = 1.00023913
+						title = Atmosphere Analysis from the upper atmosphere over Duna's Midlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@DunaFlyingHighLowlands
+						xmit = 0.600000024
+						xmitBonus = 1.00023913
+						title = Atmosphere Analysis from the upper atmosphere over Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 5
+						subjectID = crewReport@DunaFlyingLowLowlands
+						xmit = 1
+						xmitBonus = 1
+						title = Crew Report while flying over Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = temperatureScan@DunaFlyingLowLowlands
+						xmit = 0.5
+						xmitBonus = 1.00023913
+						title = Temperature Scan while flying over Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@DunaFlyingLow
+						xmit = 0.5
+						xmitBonus = 1.00023913
+						title = Atmospheric Pressure Scan while flying at Duna
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 200
+						subjectID = atmosphereAnalysis@DunaFlyingLowLowlands
+						xmit = 0.600000024
+						xmitBonus = 1.00023913
+						title = Atmosphere Analysis while flying over Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 5
+						subjectID = crewReport@DunaSrfLandedLowlands
+						xmit = 1
+						xmitBonus = 1
+						title = Crew Report from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 25
+						subjectID = mobileMaterialsLab@DunaSrfLandedLowlands
+						xmit = 0.349999994
+						xmitBonus = 1.00023913
+						title = Materials Study from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = evaReport@DunaSrfLandedLowlands
+						xmit = 1
+						xmitBonus = 0
+						title = EVA Report from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 30
+						subjectID = surfaceSample@DunaSrfLandedLowlands
+						xmit = 0.25
+						xmitBonus = 0
+						title = Surface Sample from Duna's Lowlands
+						triggered = False
+						container = 2119294833
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = evaReport@DunaFlyingLowLowlands
+						xmit = 1
+						xmitBonus = 0
+						title = EVA Report while flying over Duna's Lowlands
 						triggered = False
 						container = 2119294833
 					}
@@ -13564,8 +13845,8 @@ GAME
 				attN = top, 1
 				mass = 0.5
 				shielded = False
-				temp = 188.80834854828782
-				tempExt = 188.70482010460751
+				temp = 116.46701895327597
+				tempExt = 116.55379477730889
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13729,8 +14010,8 @@ GAME
 				attN = top, 2
 				mass = 0.400000006
 				shielded = False
-				temp = 188.81480764044775
-				tempExt = 188.80723708674449
+				temp = 117.08161487441248
+				tempExt = 117.23074205061212
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13838,8 +14119,8 @@ GAME
 				attN = bottom, 5
 				mass = 0.200000003
 				shielded = False
-				temp = 188.8152182461429
-				tempExt = 188.79736701668426
+				temp = 117.68508461073483
+				tempExt = 117.86228683461817
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13864,7 +14145,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Idle
+					stateString = Running
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -13933,8 +14214,8 @@ GAME
 				attN = bottom, 10
 				mass = 2
 				shielded = False
-				temp = 188.81614059231796
-				tempExt = 188.86558831275269
+				temp = 118.35438082596797
+				tempExt = 118.43300127486826
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13956,7 +14237,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 833.302594096044
+					amount = 893.13550030063664
 					maxAmount = 1440
 					flowState = True
 					isTweakable = True
@@ -13967,7 +14248,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 1018.4809126247901
+					amount = 1091.6099813445153
 					maxAmount = 1760
 					flowState = True
 					isTweakable = True
@@ -13999,8 +14280,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0250000004
 				shielded = False
-				temp = 188.79716778360279
-				tempExt = 188.67423797799069
+				temp = 118.39057010608748
+				tempExt = 118.53220312611846
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14025,7 +14306,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 69337231.273007467
-					currentRotation = (-0.707177937, -0.00925671868, 0.00939872675, 0.706912458)
+					currentRotation = (0.261784017, -0.656805933, 0.657054424, -0.261446953)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -14076,8 +14357,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0250000004
 				shielded = False
-				temp = 188.8308568448162
-				tempExt = 188.93162735711005
+				temp = 118.41295508543426
+				tempExt = 118.7577345911173
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14102,7 +14383,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 69337231.273007467
-					currentRotation = (-0.706678331, 0.00945854094, -0.00933185127, 0.707410276)
+					currentRotation = (0.261449546, 0.657277048, -0.656505227, -0.261976987)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -14153,8 +14434,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0199999996
 				shielded = False
-				temp = 188.81548546792231
-				tempExt = 188.80924086697416
+				temp = 118.36702001717505
+				tempExt = 118.40695895071877
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14176,7 +14457,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 399.99995000000109
+					amount = 396.06236606391298
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -14208,8 +14489,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.0199999996
 				shielded = False
-				temp = 188.81818765278874
-				tempExt = 188.84215004099943
+				temp = 118.36702001717505
+				tempExt = 118.40695895071877
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14231,7 +14512,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 399.99995000000109
+					amount = 396.06236606391298
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -14264,8 +14545,8 @@ GAME
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 188.8160915107168
-				tempExt = 188.82157152708905
+				temp = 118.02008516875701
+				tempExt = 118.4651923095156
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14471,8 +14752,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 188.81721830399133
-				tempExt = 188.79318060145999
+				temp = 115.74546680558961
+				tempExt = 115.88572225100596
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14590,8 +14871,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 188.81721830399133
-				tempExt = 188.79318060145999
+				temp = 115.74546680558961
+				tempExt = 115.88572225100596
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14709,8 +14990,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 188.81721830399133
-				tempExt = 188.79318060145999
+				temp = 115.75071195010753
+				tempExt = 116.00469760130336
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14826,8 +15107,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 9.99999975E-05
 				shielded = False
-				temp = 188.82336449487235
-				tempExt = 188.87125796302612
+				temp = 115.8721773423822
+				tempExt = 115.94928070519956
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15324,8 +15605,8 @@ GAME
 						{
 							markUT = 69337231.273007467
 							deltaVExpended = NaN
-							dragLosses = 127.89302302186955
-							gravityLosses = -120639.09711691256
+							dragLosses = 127.89302302019571
+							gravityLosses = -120655.38629196599
 							steeringLosses = NaN
 							markLAN = -104.08388290405273
 							markLatitude = -0.097464372155390874
@@ -15453,7 +15734,7 @@ GAME
 				Gear = False, 69337255.8530023
 				Light = False, 0
 				RCS = False, 91769647.3902632
-				SAS = False, 91769711.2102499
+				SAS = True, 91793074.8204548
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -15478,16 +15759,11 @@ GAME
 			FLIGHTPLAN
 			{
 			}
-			TARGET
-			{
-				type = Vessel
-				vesselID = 8c0b5261-2b54-49f3-aad5-6fa90a28ef5c
-			}
 			CTRLSTATE
 			{
-				pitch = 0
+				pitch = -4.63406377E-06
 				yaw = 0
-				roll = 0
+				roll = -6.96411746E-07
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -15507,40 +15783,203 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 8c0b52612b5449f3aad56fa90a28ef5c
-			name = duna land
-			type = Ship
-			sit = SUB_ORBITAL
-			landed = False
+			pid = 8296b785a0a34aeea337a7228ac0b4ce
+			name = dune Lowlands
+			type = Flag
+			sit = LANDED
+			landed = True
 			landedAt = 
 			splashed = False
-			met = 15288.027563989162
-			lct = 91769421.410310343
-			lastUT = 91784709.437874332
+			met = 259.85994578897953
+			lct = 91784236.044545308
+			lastUT = 91784495.904491097
 			root = 0
-			lat = 0.45844528172201038
-			lon = -162.96753281509402
-			alt = 50767.971721946727
-			hgt = -1
-			nrm = -0.00179824652,-0.614923537,-0.78858465
-			rot = 0.211274713,-0.214231089,0.675982654,-0.672692716
-			CoM = 2.35908665E-05,-1.01774883,3.42726707E-07
-			stg = 1
+			lat = 0.47012126144763078
+			lon = 177.99030083191926
+			alt = 2519.684618539759
+			hgt = 0.3987315
+			nrm = -0.00752707571,0.997678399,0.0676871538
+			rot = -0.662275255,0.64492029,-0.279284149,-0.259749472
+			CoM = 0,0,0
+			stg = 0
 			prst = False
 			ref = 0
-			ctrl = True
-			cPch = 0.1160001
-			cHdg = -0.5020001
+			ctrl = False
+			cPch = 0
+			cHdg = 0
 			cMod = 0
 			ORBIT
 			{
-				SMA = 317634.67574574304
-				ECC = 0.32242801681518901
-				INC = 0.4629439058986996
-				LPE = 321.88310579249628
-				LAN = 157.10527996970495
-				MNA = 1.8406190015522481
-				EPH = 91784709.437874332
+				SMA = 161342.42863336563
+				ECC = 0.99897626030802589
+				INC = 0.47012126144851824
+				LPE = 270
+				LAN = 144.88438469096894
+				MNA = 3.1415926535897825
+				EPH = 91784495.904491097
+				REF = 6
+			}
+			PART
+			{
+				name = flag
+				cid = 4268780880
+				uid = 1166528778
+				mid = 2294855329
+				launchID = 31
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 216.60188511695995
+				tempExt = 217.62813120453907
+				tempExtUnexp = 217.6280062153144
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Flags/kerbin
+				rTrf = flag (dune Lowlands)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Jebediah Kerman
+					PlaqueText = 
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 179432a0977f443fbd577ee708525654
+			name = duna land debris
+			type = Debris
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 37.479992181062698
+			lct = 91793385.940389886
+			lastUT = 91793423.440382063
+			root = 0
+			lat = 0.72042179369264969
+			lon = -13.576576111807858
+			alt = 264546.11954924499
+			hgt = -1
+			nrm = 0.563873291,-0.35404247,-0.74612385
+			rot = 0.581921875,-0.362061739,-0.204828411,0.698801458
+			CoM = 3.39150429E-05,-0.869439781,-1.01327896E-05
+			stg = 2
+			prst = False
+			ref = 0
+			ctrl = True
+			cPch = 0
+			cHdg = 0
+			cMod = 0
+			ORBIT
+			{
+				SMA = 600921.92311951902
+				ECC = 0.035537804855115158
+				INC = 0.78365847427030533
+				LPE = 108.07901282259976
+				LAN = 25.551766089271382
+				MNA = -0.67413430155111354
+				EPH = 91793423.440382063
 				REF = 6
 			}
 			PART
@@ -15567,8 +16006,8 @@ GAME
 				attN = top, 28
 				mass = 0.600000024
 				shielded = False
-				temp = 271.05893184957574
-				tempExt = 268.94846806860784
+				temp = 152.63841216603544
+				tempExt = 152.70820603192846
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15578,7 +16017,6 @@ GAME
 				flag = Squad/Flags/kerbin
 				rTrf = landerCabinSmall (duna land)
 				modCost = 0
-				crew = Jebediah Kerman
 				EVENTS
 				{
 				}
@@ -15616,7 +16054,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -15708,281 +16146,11 @@ GAME
 					}
 					ScienceData
 					{
-						data = 200
-						subjectID = atmosphereAnalysis@KerbinFlyingLowShores
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis while flying over Kerbin's Shores
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@KerbinFlyingLowWater
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis while flying over Kerbin's Water
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@KerbinFlyingHighWater
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis from the upper atmosphere over Kerbin's Water
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 60
-						subjectID = gravityScan@KerbinInSpaceLowWater
-						xmit = 0.400000006
-						xmitBonus = 1.00023913
-						title = Gravity Scan from space just above Kerbin's Water
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 60
-						subjectID = gravityScan@KerbinInSpaceLowShores
-						xmit = 0.400000006
-						xmitBonus = 1.00023913
-						title = Gravity Scan from space just above Kerbin's Shores
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 25
-						subjectID = mobileMaterialsLab@SunInSpaceHigh
-						xmit = 0.349999994
-						xmitBonus = 1.00023913
-						title = Materials Study while in space high over the Sun
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 25
-						subjectID = mobileMaterialsLab@DunaInSpaceHigh
-						xmit = 0.349999994
-						xmitBonus = 1.00023913
-						title = Materials Study while in space high over Duna
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
 						data = 60
 						subjectID = gravityScan@DunaInSpaceHighHighlands
 						xmit = 0.400000006
-						xmitBonus = 1.00023913
+						xmitBonus = 0
 						title = Gravity Scan while in space high over Duna's Highlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 60
-						subjectID = gravityScan@DunaInSpaceHighWesternCanyon
-						xmit = 0.400000006
-						xmitBonus = 1.00023913
-						title = Gravity Scan while in space high over Duna's Western Canyon
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 5
-						subjectID = crewReport@DunaFlyingHigh
-						xmit = 1
-						xmitBonus = 1
-						title = Crew Report from Duna's upper atmosphere
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = temperatureScan@DunaFlyingHigh
-						xmit = 0.5
-						xmitBonus = 1.00023913
-						title = Temperature Scan from Duna's upper atmosphere
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 12
-						subjectID = barometerScan@DunaFlyingHigh
-						xmit = 0.5
-						xmitBonus = 1.00023913
-						title = Atmospheric Pressure Scan from Duna's upper atmosphere
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@DunaFlyingHighHighlands
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis from the upper atmosphere over Duna's Highlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@DunaFlyingHighMidlands
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis from the upper atmosphere over Duna's Midlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@DunaFlyingHighLowlands
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis from the upper atmosphere over Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 5
-						subjectID = crewReport@DunaFlyingLowLowlands
-						xmit = 1
-						xmitBonus = 1
-						title = Crew Report while flying over Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = temperatureScan@DunaFlyingLowLowlands
-						xmit = 0.5
-						xmitBonus = 1.00023913
-						title = Temperature Scan while flying over Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 12
-						subjectID = barometerScan@DunaFlyingLow
-						xmit = 0.5
-						xmitBonus = 1.00023913
-						title = Atmospheric Pressure Scan while flying at Duna
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@DunaFlyingLowLowlands
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis while flying over Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 5
-						subjectID = crewReport@DunaSrfLandedLowlands
-						xmit = 1
-						xmitBonus = 1
-						title = Crew Report from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = temperatureScan@DunaSrfLandedLowlands
-						xmit = 0.5
-						xmitBonus = 1.00023913
-						title = Temperature Scan from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 12
-						subjectID = barometerScan@DunaSrfLandedLowlands
-						xmit = 0.5
-						xmitBonus = 1.00023913
-						title = Atmospheric Pressure Scan from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@DunaSrfLandedLowlands
-						xmit = 0.600000024
-						xmitBonus = 1.00023913
-						title = Atmosphere Analysis from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 50
-						subjectID = seismicScan@DunaSrfLandedLowlands
-						xmit = 0.449999988
-						xmitBonus = 1.00023913
-						title = Seismic Scan from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 25
-						subjectID = mobileMaterialsLab@DunaSrfLandedLowlands
-						xmit = 0.349999994
-						xmitBonus = 1.00023913
-						title = Materials Study from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@DunaSrfLandedLowlands
-						xmit = 1
-						xmitBonus = 0
-						title = EVA Report from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 30
-						subjectID = surfaceSample@DunaSrfLandedLowlands
-						xmit = 0.25
-						xmitBonus = 0
-						title = Surface Sample from Duna's Lowlands
-						triggered = False
-						container = 805151803
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = evaReport@DunaFlyingLowLowlands
-						xmit = 1
-						xmitBonus = 0
-						title = EVA Report while flying over Duna's Lowlands
 						triggered = False
 						container = 805151803
 					}
@@ -16155,7 +16323,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 49.686701028330717
+					amount = 49.333395199876293
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -16166,7 +16334,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 14.802430612365336
+					amount = 14.742039661302941
 					maxAmount = 15
 					flowState = True
 					isTweakable = True
@@ -16183,8 +16351,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = 0.80855256319046021,0.045612461864948273,5.5706419033185739E-08
-				rotation = 2.77703567E-08,0.707106888,-5.93361378E-08,-0.707106948
+				position = 0.80855292081832886,0.045612629503011703,5.6177750451524844E-08
+				rotation = 5.13225196E-08,0.707106769,-3.97572784E-08,-0.707106769
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -16197,8 +16365,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 270.01443262518194
-				tempExt = 269.47230936262343
+				temp = 152.65191852230126
+				tempExt = 152.6666983201896
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16221,7 +16389,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -16238,16 +16406,6 @@ GAME
 						{
 							actionGroup = None
 						}
-					}
-					ScienceData
-					{
-						data = 200
-						subjectID = atmosphereAnalysis@DunaSrfLandedLowlands
-						xmit = 0.600000024
-						xmitBonus = 0
-						title = Atmosphere Analysis from Duna's Lowlands
-						triggered = False
-						container = 1377673822
 					}
 					UPGRADESAPPLIED
 					{
@@ -16277,8 +16435,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = 0.57480341196060181,0.28476759791374207,-0.57480323314666748
-				rotation = 1.18484969E-07,0.382683575,6.79016168E-08,-0.923879683
+				position = 0.57480370998382568,0.28476756811141968,-0.57480353116989136
+				rotation = 1.28252182E-07,0.382683605,4.2707974E-08,-0.923879623
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -16291,8 +16449,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 270.32823764176067
-				tempExt = 269.54147556340786
+				temp = 152.67236227549887
+				tempExt = 152.67829180032155
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16335,7 +16493,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -16352,16 +16510,6 @@ GAME
 						{
 							actionGroup = None
 						}
-					}
-					ScienceData
-					{
-						data = 50
-						subjectID = seismicScan@DunaSrfLandedLowlands
-						xmit = 0.449999988
-						xmitBonus = 1.0002389
-						title = Seismic Scan from Duna's Lowlands
-						triggered = False
-						container = 1348831781
 					}
 					UPGRADESAPPLIED
 					{
@@ -16391,8 +16539,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = 0.42736846208572388,0.29123327136039734,-0.71587443351745605
-				rotation = 1.18484969E-07,0.382683575,6.79016168E-08,-0.923879683
+				position = 0.42736890912055969,0.29123339056968689,-0.71587473154067993
+				rotation = 1.28252182E-07,0.382683605,4.2707974E-08,-0.923879623
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -16405,8 +16553,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 270.18429536219736
-				tempExt = 269.43271716726156
+				temp = 152.67976964352019
+				tempExt = 152.68906301914785
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16449,7 +16597,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -16466,16 +16614,6 @@ GAME
 						{
 							actionGroup = None
 						}
-					}
-					ScienceData
-					{
-						data = 8
-						subjectID = temperatureScan@DunaSrfLandedLowlands
-						xmit = 0.5
-						xmitBonus = 1.0002389
-						title = Temperature Scan from Duna's Lowlands
-						triggered = False
-						container = 3011534447
 					}
 					UPGRADESAPPLIED
 					{
@@ -16505,8 +16643,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = 0.44022047519683838,-0.093654446303844452,-0.7030218243598938
-				rotation = 1.18484969E-07,0.382683575,6.79016168E-08,-0.923879683
+				position = 0.44022074341773987,-0.093654520809650421,-0.70302212238311768
+				rotation = 1.28252182E-07,0.382683605,4.2707974E-08,-0.923879623
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -16519,8 +16657,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 270.35994617490741
-				tempExt = 269.55136115914496
+				temp = 152.67076908700867
+				tempExt = 152.67773866772347
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16563,7 +16701,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -16580,16 +16718,6 @@ GAME
 						{
 							actionGroup = None
 						}
-					}
-					ScienceData
-					{
-						data = 12
-						subjectID = barometerScan@DunaSrfLandedLowlands
-						xmit = 0.5
-						xmitBonus = 1.00023901
-						title = Atmospheric Pressure Scan from Duna's Lowlands
-						triggered = False
-						container = 112951749
 					}
 					UPGRADESAPPLIED
 					{
@@ -16619,8 +16747,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = 0.71709358692169189,0.27742424607276917,-0.42614933848381042
-				rotation = 1.18484969E-07,0.382683575,6.79016168E-08,-0.923879683
+				position = 0.71709400415420532,0.27742433547973633,-0.42614954710006714
+				rotation = 1.28252182E-07,0.382683605,4.2707974E-08,-0.923879623
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -16633,8 +16761,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 270.33613861678111
-				tempExt = 269.54335386669243
+				temp = 152.671987115907
+				tempExt = 152.67816174118335
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16677,7 +16805,7 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = True
+					Deployed = False
 					Inoperable = False
 					cooldownToGo = 0
 					stagingEnabled = True
@@ -16694,16 +16822,6 @@ GAME
 						{
 							actionGroup = None
 						}
-					}
-					ScienceData
-					{
-						data = 60
-						subjectID = gravityScan@DunaInSpaceHighHighlands
-						xmit = 0.400000006
-						xmitBonus = 0
-						title = Gravity Scan while in space high over Duna's Highlands
-						triggered = False
-						container = 3385702228
 					}
 					UPGRADESAPPLIED
 					{
@@ -16733,8 +16851,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = -0.5798499584197998,0.29561293125152588,-0.56339293718338013
-				rotation = 0.270598233,-0.270597994,0.65328151,-0.653281569
+				position = -0.57984989881515503,0.29561281204223633,-0.56339293718338013
+				rotation = 0.270598203,-0.270597935,0.65328145,-0.653281569
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 0
@@ -16748,8 +16866,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.075000003
 				shielded = False
-				temp = 252.28894239712596
-				tempExt = 263.38458844216944
+				temp = 152.68202213045922
+				tempExt = 152.6680918134318
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16851,8 +16969,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = 0.57984989881515503,0.29561245441436768,0.56339269876480103
-				rotation = 0.653281569,-0.653281629,-0.270598263,0.270598054
+				position = 0.57985007762908936,0.29561260342597961,0.56339287757873535
+				rotation = 0.65328145,-0.65328151,-0.270598263,0.270598054
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 0
@@ -16866,8 +16984,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.075000003
 				shielded = False
-				temp = 252.28923254514515
-				tempExt = 263.35491217519143
+				temp = 152.68205035643669
+				tempExt = 152.66810078703898
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16969,8 +17087,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = 7.6445381580469984E-08,-1.5624998807907104,2.3471628196602978E-07
-				rotation = 0,0,0,1.00000024
+				position = -3.9606962154437042E-09,-1.5625001192092896,1.5787841789460799E-07
+				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -16985,8 +17103,8 @@ GAME
 				attN = bottom, 15
 				mass = 1
 				shielded = False
-				temp = 254.28829973386328
-				tempExt = 254.18325786174316
+				temp = 152.78807714001613
+				tempExt = 152.8091641162807
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -17008,7 +17126,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 100.82609451305832
+					amount = 0
 					maxAmount = 720
 					flowState = True
 					isTweakable = True
@@ -17019,7 +17137,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 123.23185684328561
+					amount = 0
 					maxAmount = 880
 					flowState = True
 					isTweakable = True
@@ -17036,8 +17154,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -1.2138351202011108,-2.3055915832519531,2.1020355234213639E-07
-				rotation = -0.135323495,-0.694037318,-0.135323495,0.694037318
+				position = -1.2138352394104004,-2.3055915832519531,2.6245180606565555E-07
+				rotation = -0.13532348,-0.694037199,-0.13532348,0.694037139
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -17055,8 +17173,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 257.07739901854558
-				tempExt = 256.6528399903039
+				temp = 153.12064610214222
+				tempExt = 153.02227296065098
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -17194,8 +17312,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -0.60691714286804199,-2.3055915832519531,1.051211953163147
-				rotation = -0.184855327,-0.254035205,-0.0495318435,0.948072493
+				position = -0.60691726207733154,-2.3055927753448486,1.0512123107910156
+				rotation = -0.184855312,-0.254035205,-0.0495318659,0.948072433
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -17213,8 +17331,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 255.49792163705132
-				tempExt = 254.7244175764242
+				temp = 153.12058249165281
+				tempExt = 153.0067231058774
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -17352,8 +17470,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 0.60691714286804199,-2.3055915832519531,1.0512120723724365
-				rotation = -0.184855342,0.254035324,0.0495318659,0.948072433
+				position = 0.60691708326339722,-2.3055920600891113,1.0512121915817261
+				rotation = -0.184855312,0.254035294,0.0495318398,0.948072374
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -17371,8 +17489,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 255.49370627313851
-				tempExt = 254.73635220735306
+				temp = 153.12077335034641
+				tempExt = 153.0496705882027
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -17510,8 +17628,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 1.213834285736084,-2.3055918216705322,4.2375643261038931E-07
-				rotation = -0.13532351,0.694037318,0.135323495,0.694037199
+				position = 1.2138344049453735,-2.3055922985076904,3.7572954170173034E-07
+				rotation = -0.13532351,0.694037199,0.13532348,0.69403708
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -17529,8 +17647,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 255.66124346442012
-				tempExt = 255.15703926467046
+				temp = 153.12058249165281
+				tempExt = 153.0067231058774
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -17668,8 +17786,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 0.60691684484481812,-2.3055918216705322,-1.0512113571166992
-				rotation = -0.0495318361,0.948072553,0.184855402,0.254035205
+				position = 0.60691696405410767,-2.3055920600891113,-1.0512118339538574
+				rotation = -0.0495318174,0.948072433,0.184855372,0.254035175
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -17687,8 +17805,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 257.12123449842744
-				tempExt = 256.71762911283002
+				temp = 153.12058249165281
+				tempExt = 153.0067231058774
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -17826,8 +17944,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -0.60691744089126587,-2.3055918216705322,-1.0512114763259888
-				rotation = 0.0495318435,0.948072493,0.184855416,-0.254035205
+				position = -0.60691750049591064,-2.3055922985076904,-1.0512117147445679
+				rotation = 0.0495318286,0.948072433,0.184855387,-0.254035205
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -17845,8 +17963,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 255.5453284493116
-				tempExt = 255.12620958876911
+				temp = 153.12058249165281
+				tempExt = 153.0067231058774
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -17984,8 +18102,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -5.1783382559733582E-07,-2.7706224918365479,2.4630284656268486E-07
-				rotation = 0,0,0,1.00000024
+				position = -3.3153514777950477E-07,-2.7706229686737061,4.1358202906849328E-07
+				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
@@ -18000,8 +18118,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.5
 				shielded = False
-				temp = 256.77528927653424
-				tempExt = 256.41895095505083
+				temp = 153.12054662744413
+				tempExt = 153.04082849324999
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -18104,7 +18222,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 0.128151894
+					animState = 0
 					stagingEnabled = True
 					EVENTS
 					{
@@ -18176,8 +18294,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -2.3936698312354565E-07,-1.1625019311904907,-1.1999994516372681
-				rotation = -8.17988337E-07,0.707106888,7.60409932E-07,-0.707106888
+				position = -4.7209834264094752E-08,-1.1625019311904907,-1.2000002861022949
+				rotation = -8.05790989E-07,0.707106829,6.986823E-07,-0.707106829
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18190,8 +18308,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.00499999989
 				shielded = False
-				temp = 256.58309293762977
-				tempExt = 256.31727667817256
+				temp = 152.78603103484548
+				tempExt = 152.78037395617307
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -18247,8 +18365,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -0.63293421268463135,-1.0750538110733032,-1.0947897434234619
-				rotation = -4.65533361E-07,0.499999464,8.2134784E-07,-0.866025925
+				position = -0.63293439149856567,-1.0750540494918823,-1.0947902202606201
+				rotation = -4.58275792E-07,0.499999434,8.47936462E-07,-0.866025805
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18264,8 +18382,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 254.84971523514338
-				tempExt = 254.39025019892259
+				temp = 153.1207574355729
+				tempExt = 153.03277223737345
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -18323,8 +18441,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -1.0947897434234619,-1.0750539302825928,0.63293445110321045
-				rotation = 2.3049779E-07,-0.258819818,9.12634903E-07,-0.965925872
+				position = -1.0947901010513306,-1.0750540494918823,0.6329348087310791
+				rotation = 2.47586513E-07,-0.258819759,9.04257774E-07,-0.965925813
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18340,8 +18458,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 254.84971523656313
-				tempExt = 254.3902502002276
+				temp = 153.1207574355729
+				tempExt = 153.03277223737345
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -18399,8 +18517,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 0.63293421268463135,-1.0750542879104614,1.0947895050048828
-				rotation = 8.0353982E-07,-0.866025984,4.79361915E-07,-0.499999404
+				position = 0.63293445110321045,-1.0750540494918823,1.0947901010513306
+				rotation = 8.25715233E-07,-0.866025925,4.87447664E-07,-0.499999344
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18416,8 +18534,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 254.84971523326794
-				tempExt = 254.39025019719867
+				temp = 153.1207574355729
+				tempExt = 153.03277223737345
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -18475,8 +18593,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 1.0947892665863037,-1.0750541687011719,-0.6329343318939209
-				rotation = 9.27822498E-07,-0.965925872,-2.40413868E-07,0.258819818
+				position = 1.0947896242141724,-1.0750542879104614,-0.63293486833572388
+				rotation = 9.64431365E-07,-0.965925694,-2.45432744E-07,0.258819729
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18492,8 +18610,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 254.84971522214025
-				tempExt = 254.39025018696987
+				temp = 153.1207574355729
+				tempExt = 153.03277223737345
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -18551,8 +18669,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 0.71861588954925537,-0.45420446991920471,-0.71861523389816284
-				rotation = -3.01516536E-08,0.707107723,-0.707106054,2.1301485E-09
+				position = 0.7186160683631897,-0.45420488715171814,-0.71861553192138672
+				rotation = 2.89172131E-09,0.707107604,-0.707105994,-1.44128851E-08
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18566,8 +18684,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.075000003
 				shielded = False
-				temp = 249.97417307574315
-				tempExt = 252.68414443699146
+				temp = 153.29303067328297
+				tempExt = 153.08652244643676
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -18589,7 +18707,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 59.209722449461346
+					amount = 58.968158645211766
 					maxAmount = 60
 					flowState = True
 					isTweakable = True
@@ -18606,8 +18724,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -0.71861577033996582,-0.454204261302948,0.71861517429351807
-				rotation = -0.707106054,-4.15545287E-08,4.94189791E-08,-0.707107723
+				position = -0.71861588954925537,-0.45420444011688232,0.71861541271209717
+				rotation = -0.707105935,5.46006929E-09,1.8999506E-08,-0.707107663
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18621,8 +18739,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.075000003
 				shielded = False
-				temp = 249.78630797432376
-				tempExt = 252.62876762436272
+				temp = 153.29328494687383
+				tempExt = 153.10348772192327
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -18644,7 +18762,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 59.209722449461346
+					amount = 58.968158645211766
 					maxAmount = 60
 					flowState = True
 					isTweakable = True
@@ -18661,8 +18779,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 1.208680272102356,-1.1637383699417114,3.369485170878761E-07
-				rotation = 0,1.00000024,0,0
+				position = 1.2086805105209351,-1.163738489151001,2.6594267410473549E-07
+				rotation = 0,1,0,0
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -18675,8 +18793,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 9.99999975E-05
 				shielded = False
-				temp = 257.08991793668025
-				tempExt = 256.75299765698475
+				temp = 152.88862912519193
+				tempExt = 152.85660552766828
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19173,8 +19291,8 @@ GAME
 						{
 							markUT = 91769103.890376583
 							deltaVExpended = NaN
-							dragLosses = 1236.2883997995823
-							gravityLosses = -1175.9838837871321
+							dragLosses = 1236.2884024706266
+							gravityLosses = -759.96291859381347
 							steeringLosses = NaN
 							markLAN = 2.6017225931782946
 							markLatitude = -0.061313181940499104
@@ -19290,7 +19408,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 4.9686701028323466
+					amount = 4.9333395199867986
 					maxAmount = 5
 					flowState = True
 					isTweakable = True
@@ -19307,8 +19425,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 1.0457693338394165,-1.7288978099822998,-0.60377484560012817
-				rotation = -5.11589519E-07,0.499998748,-2.86720706E-07,-0.866026342
+				position = 1.0457700490951538,-1.7288981676101685,-0.60377544164657593
+				rotation = -5.03782417E-07,0.499998629,-3.12047632E-07,-0.866026282
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -19322,8 +19440,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0199999996
 				shielded = False
-				temp = 256.79401064745849
-				tempExt = 256.3345552394822
+				temp = 152.95262582923172
+				tempExt = 152.90168210418815
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19345,7 +19463,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 397.49360822664573
+					amount = 394.66716159901034
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -19362,8 +19480,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -1.0457693338394165,-1.7288972139358521,0.60377544164657593
-				rotation = -3.40379586E-07,-0.866026461,4.95111919E-07,-0.499998629
+				position = -1.0457699298858643,-1.7288978099822998,0.60377556085586548
+				rotation = -3.6199819E-07,-0.866026342,4.8720517E-07,-0.499998569
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -19377,8 +19495,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0199999996
 				shielded = False
-				temp = 256.80128733725837
-				tempExt = 256.34420107443862
+				temp = 152.95262582923172
+				tempExt = 152.90168210418815
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19400,7 +19518,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 397.49360822664573
+					amount = 394.66716159901034
 					maxAmount = 400
 					flowState = True
 					isTweakable = True
@@ -19417,8 +19535,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = 0.60411041975021362,-1.2099875211715698,-1.0463500022888184
-				rotation = -8.34379478E-07,0.866026402,4.75464532E-07,-0.499998689
+				position = 0.60411053895950317,-1.2099878787994385,-1.046350359916687
+				rotation = -8.24867584E-07,0.866026223,4.71109388E-07,-0.499998629
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -19432,8 +19550,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0250000004
 				shielded = False
-				temp = 256.14717221690603
-				tempExt = 254.05295727131616
+				temp = 152.99656576023284
+				tempExt = 152.75716071529169
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19458,10 +19576,10 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 69337231.273007467
-					currentRotation = (-0.707106829, 0, 0, 0.707106829)
-					storedAnimationTime = 0.433271378
+					currentRotation = (0.705958903, 0.0406581126, -0.0407966934, -0.705906928)
+					storedAnimationTime = 0
 					storedAnimationSpeed = 1
-					deployState = EXTENDING
+					deployState = EXTENDED
 					stagingEnabled = True
 					EVENTS
 					{
@@ -19494,8 +19612,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 8
-				position = -0.60411036014556885,-1.2099876403808594,1.046350359916687
-				rotation = 4.85251348E-07,-0.499998689,8.35460469E-07,-0.866026342
+				position = -0.6041104793548584,-1.2099876403808594,1.0463507175445557
+				rotation = 5.03303909E-07,-0.499998659,8.52514063E-07,-0.866026163
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -19509,8 +19627,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0250000004
 				shielded = False
-				temp = 256.13755696413324
-				tempExt = 254.16317413598529
+				temp = 153.13052244255206
+				tempExt = 153.93360774570536
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19535,10 +19653,10 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 69337231.273007467
-					currentRotation = (-0.707106829, 0, 0, 0.707106829)
-					storedAnimationTime = 0.433271378
+					currentRotation = (0.705777705, -0.0407929383, 0.0406367145, -0.706089556)
+					storedAnimationTime = 0
 					storedAnimationSpeed = 1
-					deployState = EXTENDING
+					deployState = EXTENDED
 					stagingEnabled = True
 					EVENTS
 					{
@@ -19571,8 +19689,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 0
-				position = -7.3607169248646187E-09,1.1375012397766113,-1.1777673591950588E-07
-				rotation = 0,0,0,1.00000024
+				position = 1.4310825235952507E-07,1.1375013589859009,-7.1720450023349258E-08
+				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -19587,8 +19705,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.200000003
 				shielded = False
-				temp = 271.37608904393244
-				tempExt = 270.08687706823531
+				temp = 152.47710403401069
+				tempExt = 152.60670561989497
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19683,8 +19801,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 28
-				position = 0.61907416582107544,1.1442151069641113,0.14406648278236389
-				rotation = -0.70710665,-2.54207393E-08,0.707107127,-2.14228502E-09
+				position = 0.61907428503036499,1.1442152261734009,0.14406642317771912
+				rotation = -0.70710659,-2.68373963E-08,0.707107067,-2.55031329E-09
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 0
@@ -19692,14 +19810,14 @@ GAME
 				dstg = 0
 				sqor = 0
 				sepI = -1
-				sidx = 1
+				sidx = 0
 				attm = 1
 				sym = 30
 				srfN = srfAttach, 28
 				mass = 0.100000001
 				shielded = False
-				temp = 271.56020305663003
-				tempExt = 270.38886399545117
+				temp = 152.43776993815797
+				tempExt = 152.50933903791838
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19801,8 +19919,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 28
-				position = -0.61907422542572021,1.1442152261734009,-0.14406658709049225
-				rotation = 0.707107186,-1.60135105E-08,0.70710659,-2.86282997E-08
+				position = -0.61907416582107544,1.1442155838012695,-0.14406666159629822
+				rotation = 0.707107067,-1.39672087E-08,0.707106471,-2.44341276E-08
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 0
@@ -19810,14 +19928,14 @@ GAME
 				dstg = 0
 				sqor = 0
 				sepI = -1
-				sidx = 1
+				sidx = 0
 				attm = 1
 				sym = 29
 				srfN = srfAttach, 28
 				mass = 0.100000001
 				shielded = False
-				temp = 271.56027001255825
-				tempExt = 270.3919167333961
+				temp = 152.43776993815797
+				tempExt = 152.50933903791838
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -19919,8 +20037,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 28
-				position = -3.5310780077679738E-08,1.9375044107437134,-2.7491782361721562E-07
-				rotation = 0,0,0,1.00000024
+				position = 8.9023970417656528E-08,1.9375046491622925,-2.5160932182188844E-07
+				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -19935,8 +20053,8 @@ GAME
 				attN = top, 32
 				mass = 0.100000001
 				shielded = False
-				temp = 271.84164465680522
-				tempExt = 271.15007331916968
+				temp = 152.18323277536427
+				tempExt = 152.39805839751796
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -19982,7 +20100,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -20163,7 +20281,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 9.9373402056646931
+					amount = 9.8666790399735973
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -20180,8 +20298,8 @@ GAME
 				mid = 2294855329
 				launchID = 31
 				parent = 31
-				position = 1.5282932253057879E-08,2.1250042915344238,-2.9167796355977771E-07
-				rotation = 0,0,0,1.00000024
+				position = 1.069280131105188E-07,2.1250045299530029,-2.8771137294825166E-07
+				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -20196,8 +20314,8 @@ GAME
 				attN = bottom, 31
 				mass = 0.0500000007
 				shielded = False
-				temp = 272.53557341173195
-				tempExt = 272.0414551557069
+				temp = 152.15712329040031
+				tempExt = 152.43814018664995
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -20259,184 +20377,6 @@ GAME
 			ACTIONGROUPS
 			{
 				Stage = False, 0
-				Gear = False, 91784515.764487
-				Light = False, 0
-				RCS = False, 91769545.3902845
-				SAS = False, 91784463.5244979
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 91784619.6644653
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-				MANEUVER
-				{
-					UT = 91785133.735869065
-					dV = -1.4210854715202004E-14,1.1102230246251565E-16,149.73828125
-				}
-			}
-			TARGET
-			{
-				type = Vessel
-				vesselID = cbb40170-25d2-45ee-ad6e-5c677b9cdda2
-			}
-			CTRLSTATE
-			{
-				pitch = 0.418114632
-				yaw = 0.0551009439
-				roll = 0.00207021507
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-				CommNetVessel
-				{
-					controlState = KerbalFull
-					canComm = True
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 8296b785a0a34aeea337a7228ac0b4ce
-			name = dune Lowlands
-			type = Flag
-			sit = LANDED
-			landed = True
-			landedAt = 
-			splashed = False
-			met = 259.85994578897953
-			lct = 91784236.044545308
-			lastUT = 91784495.904491097
-			root = 0
-			lat = 0.47012126144763078
-			lon = 177.99030083191926
-			alt = 2519.684618539759
-			hgt = 0.3987315
-			nrm = -0.00752707571,0.997678399,0.0676871538
-			rot = -0.662275255,0.64492029,-0.279284149,-0.259749472
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = 0
-			ORBIT
-			{
-				SMA = 161342.42863336563
-				ECC = 0.99897626030802589
-				INC = 0.47012126144851824
-				LPE = 270
-				LAN = 144.88438469096894
-				MNA = 3.1415926535897825
-				EPH = 91784495.904491097
-				REF = 6
-			}
-			PART
-			{
-				name = flag
-				cid = 4268780880
-				uid = 1166528778
-				mid = 2294855329
-				launchID = 31
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				mass = 0.00999999978
-				shielded = False
-				temp = 216.60188511695995
-				tempExt = 217.62813120453907
-				tempExtUnexp = 217.6280062153144
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = Squad/Flags/kerbin
-				rTrf = flag (dune Lowlands)
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = FlagSite
-					isEnabled = True
-					placedBy = Jebediah Kerman
-					PlaqueText = 
-					stagingEnabled = True
-					state = Placed
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 0
 				Gear = False, 0
 				Light = False, 0
 				RCS = False, 0
@@ -20465,6 +20405,11 @@ GAME
 			FLIGHTPLAN
 			{
 			}
+			TARGET
+			{
+				type = Vessel
+				vesselID = cbb40170-25d2-45ee-ad6e-5c677b9cdda2
+			}
 			CTRLSTATE
 			{
 				pitch = 0
@@ -20479,6 +20424,11 @@ GAME
 			{
 				FlightIntegrator
 				{
+				}
+				CommNetVessel
+				{
+					controlState = ProbeFull
+					canComm = True
 				}
 			}
 		}
