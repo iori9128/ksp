@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/kerbin
-	launchID = 25
+	launchID = 26
 	modded = True
 	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
 	versionFull = 1.2.2.1622 (WindowsPlayer x64)
@@ -593,7 +593,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 245.99556
+		sci = 265.995544
 		Tech
 		{
 			id = start
@@ -1819,9 +1819,9 @@ GAME
 			id = mysteryGoo@KerbinSrfSplashedWater
 			title = Mystery Goo™ Observation from Kerbin's Water
 			dsc = 1
-			scv = 1
+			scv = 0.230769277
 			sbv = 0.400000006
-			sci = 0
+			sci = 4
 			cap = 5.20000029
 		}
 		Science
@@ -2854,6 +2854,106 @@ GAME
 			sci = 0
 			cap = 8.80000019
 		}
+		Science
+		{
+			id = gravityScan@KerbinSrfLandedLaunchPad
+			title = Gravity Scan from LaunchPad
+			dsc = 3
+			scv = 0.0909091458
+			sbv = 0.300000012
+			sci = 6
+			cap = 6.60000038
+		}
+		Science
+		{
+			id = gravityScan@KerbinFlyingLow
+			title = Gravity Scan while flying at Kerbin
+			dsc = 3
+			scv = 1
+			sbv = 0.699999988
+			sci = 0
+			cap = 15.3999996
+		}
+		Science
+		{
+			id = gravityScan@KerbinFlyingHigh
+			title = Gravity Scan from Kerbin's upper atmosphere
+			dsc = 3
+			scv = 1
+			sbv = 0.899999976
+			sci = 0
+			cap = 19.7999992
+		}
+		Science
+		{
+			id = gravityScan@KerbinInSpaceLowGrasslands
+			title = Gravity Scan from space just above Kerbin's Grasslands
+			dsc = 3
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 22
+		}
+		Science
+		{
+			id = gravityScan@KerbinInSpaceLowShores
+			title = Gravity Scan from space just above Kerbin's Shores
+			dsc = 3
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 22
+		}
+		Science
+		{
+			id = gravityScan@KerbinInSpaceLowWater
+			title = Gravity Scan from space just above Kerbin's Water
+			dsc = 3
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 22
+		}
+		Science
+		{
+			id = gravityScan@KerbinInSpaceLowHighlands
+			title = Gravity Scan from space just above Kerbin's Highlands
+			dsc = 3
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 22
+		}
+		Science
+		{
+			id = gravityScan@KerbinInSpaceLowMountains
+			title = Gravity Scan from space just above Kerbin's Mountains
+			dsc = 3
+			scv = 1
+			sbv = 1
+			sci = 0
+			cap = 22
+		}
+		Science
+		{
+			id = gravityScan@KerbinSrfSplashedWater
+			title = Gravity Scan from Kerbin's Water
+			dsc = 3
+			scv = 1
+			sbv = 0.400000006
+			sci = 0
+			cap = 8.80000019
+		}
+		Science
+		{
+			id = recovery@KerbinOrbited
+			title = Recovery of a vessel returned from Kerbin orbit
+			dsc = 1
+			scv = 0.166666672
+			sbv = 10
+			sci = 10
+			cap = 12
+		}
 	}
 	SCENARIO
 	{
@@ -3400,8 +3500,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 31459327.679236967
-		activeVessel = 13
+		UT = 31461409.660921689
+		activeVessel = 0
 		mapViewFiltering = 7167
 		commNetUIModeTracking = VesselLinks
 		commNetUIModeFlight = Path
@@ -3434,13 +3534,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 0.045205618747903083
-				LPE = 90.000000000000014
-				LAN = 20.005539844846339
-				MNA = 0
-				EPH = 31459305.879237454
+				SMA = 30000.155810323449
+				ECC = 0.99999999999999989
+				INC = 0.04520561875596546
+				LPE = 90
+				LAN = 38.71111921136054
+				MNA = 3.1415926207170166
+				EPH = 31461405.060921792
 				REF = 3
 			}
 			PART
@@ -3599,11 +3699,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 9.1161139505688205
-				LPE = 90
-				LAN = 43.084974444997215
+				INC = 9.1161139508077884
+				LPE = 90.000000000000014
+				LAN = 61.790553810068275
 				MNA = 0
-				EPH = 31459305.879237454
+				EPH = 31461405.060921792
 				REF = 3
 			}
 			PART
@@ -3760,13 +3860,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 2.5236774939926105
+				SMA = 32229.483586303049
+				ECC = 0.99999999999999989
+				INC = 2.5236774940131244
 				LPE = 270
-				LAN = 83.173036844118087
-				MNA = 0
-				EPH = 31459305.879237454
+				LAN = 101.87861621004657
+				MNA = 3.1415926207170166
+				EPH = 31461405.060921792
 				REF = 3
 			}
 			PART
@@ -3923,13 +4023,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.186865851934
-				ECC = 0.99999999999999989
-				INC = 29.922490765769545
+				SMA = NaN
+				ECC = 1
+				INC = 29.922490765584602
 				LPE = 270
-				LAN = 172.27417289374375
-				MNA = -3.1415926207170166
-				EPH = 31459305.879237454
+				LAN = 190.97975225918978
+				MNA = 0
+				EPH = 31461405.060921792
 				REF = 3
 			}
 			PART
@@ -6360,13 +6460,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.174500011144
-				ECC = 0.99999999999999989
-				INC = 6.8101604105098721
+				SMA = NaN
+				ECC = 1
+				INC = 6.8101604104394911
 				LPE = 270
-				LAN = 289.5829266763995
-				MNA = 3.1415926207170166
-				EPH = 31459305.879237454
+				LAN = 308.28850604230752
+				MNA = 0
+				EPH = 31461405.060921792
 				REF = 3
 			}
 			PART
@@ -6525,11 +6625,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 51.843652923121233
+				INC = 51.843652923337714
 				LPE = 270
-				LAN = 348.93491494425814
+				LAN = 7.6404943103171945
 				MNA = 0
-				EPH = 31459305.879237454
+				EPH = 31461405.060921792
 				REF = 3
 			}
 			PART
@@ -6686,13 +6786,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 31576.292277021083
-				ECC = 0.99999999999999989
-				INC = 87.495965447315399
+				SMA = NaN
+				ECC = 1
+				INC = 87.495965446891063
 				LPE = 270
-				LAN = 13.934225351401096
-				MNA = 3.1415926207170166
-				EPH = 31459305.879237454
+				LAN = 32.639804705479719
+				MNA = 0
+				EPH = 31461405.060921792
 				REF = 3
 			}
 			PART
@@ -7842,8 +7942,8 @@ GAME
 			prst = False
 			ref = 0
 			ctrl = True
-			cPch = 0.2
-			cHdg = 0.3
+			cPch = 
+			cHdg = 
 			cMod = 0
 			ORBIT
 			{
@@ -10196,7 +10296,7 @@ GAME
 			extraXP = 0
 			CAREER_LOG
 			{
-				flight = 5
+				flight = 6
 				0 = Recover
 				1 = Land,Kerbin
 				1 = Recover
@@ -10238,10 +10338,15 @@ GAME
 				4 = PlantFlag,Minmus
 				4 = Flyby,Kerbin
 				4 = Recover
+				5 = Land,Kerbin
+				5 = Flight,Kerbin
+				5 = Suborbit,Kerbin
+				5 = Orbit,Kerbin
+				5 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 5
+				flight = 6
 			}
 		}
 		KERBAL
