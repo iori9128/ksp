@@ -807,7 +807,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 3161.7019
+		sci = 11.7019043
 		Tech
 		{
 			id = start
@@ -1207,6 +1207,87 @@ GAME
 			part = MiniDrill
 			part = ISRU
 			part = SCANsat.Scanner2
+		}
+		Tech
+		{
+			id = heavyLanding
+			state = Available
+			cost = 300
+			part = GearMedium
+			part = GearLarge
+			part = InflatableHeatShield
+		}
+		Tech
+		{
+			id = composites
+			state = Available
+			cost = 300
+			part = dockingPortLateral
+			part = structuralPanel2
+			part = structuralPanel1
+			part = structuralIBeam1
+			part = structuralIBeam3
+			part = structuralIBeam2
+			part = fairingSize3
+			part = KAS.Hook.Harpoon
+		}
+		Tech
+		{
+			id = metaMaterials
+			state = Available
+			cost = 550
+			part = dockingPortLarge
+			part = stationHub
+			part = adapterLargeSmallTri
+			part = adapterLargeSmallQuad
+			part = adapterLargeSmallBi
+			part = KAS.Hook.GrapplingHook
+		}
+		Tech
+		{
+			id = advUnmanned
+			state = Available
+			cost = 550
+			part = HECS2.ProbeCore
+			part = probeStackSmall
+			part = mumech.MJ2.AR202.features4
+		}
+		Tech
+		{
+			id = automation
+			state = Available
+			cost = 550
+			part = RelayAntenna100
+			part = commDish
+			part = mk2DroneCore
+			part = mumech.MJ2.Pod
+		}
+		Tech
+		{
+			id = scienceTech
+			state = Available
+			cost = 300
+			part = sensorAtmosphere
+			part = SurveyScanner
+			part = SurfaceScanner
+		}
+		Tech
+		{
+			id = nuclearPropulsion
+			state = Available
+			cost = 300
+			part = nuclearEngine
+		}
+		Tech
+		{
+			id = advMetalworks
+			state = Available
+			cost = 300
+			part = stackQuadCoupler
+			part = dockingPort1
+			part = stackSeparatorBig
+			part = trussPiece3x
+			part = KAS.Winch2
 		}
 		Science
 		{
@@ -4875,7 +4956,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 69332845.914076611
+		UT = 69332879.014069706
 		activeVessel = 0
 		mapViewFiltering = 7165
 		commNetUIModeTracking = Network
