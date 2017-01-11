@@ -634,7 +634,7 @@ PART
 	resPri = 0
 	dstg = 3
 	sidx = 0
-	sqor = 3
+	sqor = 2
 	sepI = 2
 	attm = 0
 	modCost = 0
@@ -1483,7 +1483,7 @@ PART
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 4
+	sqor = 3
 	sepI = 2
 	attm = 0
 	modCost = 0
@@ -6036,8 +6036,6 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = parachuteRadial_4289335838
-	link = parachuteRadial_4289335784
 	link = probeCoreHex_4289335730
 	attN = top,probeCoreHex_4289335730
 	attN = bottom,landerCabinSmall_4289336258
@@ -6124,264 +6122,6 @@ PART
 		defaultScale = 1.25
 		defaultTransformScale = (0, 0, 0)
 		DryCost = 1800
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = parachuteRadial_4289335838
-	partName = Part
-	pos = -0.00588846207,54.2408218,1.17615259
-	attPos = 0,0,0
-	attPos0 = 0.619074583,0.00671386719,0.144066572
-	rot = -0.70710659,0,0.707107067,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = -0.70710659,0,0.707107067,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = parachuteRadial_4289335784
-	srfN = srfAttach,science.module_4289335990
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (0, 0, 0)
-		DryCost = 400
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = parachuteRadial_4289335784
-	partName = Part
-	pos = -1.24403763,54.2408218,0.888019681
-	attPos = 0,0,0
-	attPos0 = -0.619074583,0.00671386719,-0.144066453
-	rot = 0.707107127,0,0.707106531,0
-	attRot = 0,0,-0.99999994,0
-	attRot0 = 0.707107127,0,0.707106531,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = parachuteRadial_4289335838
-	srfN = srfAttach,science.module_4289335990
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (0, 0, 0)
-		DryCost = 400
 		stagingEnabled = True
 		EVENTS
 		{
@@ -6744,7 +6484,7 @@ PART
 	resPri = 0
 	dstg = 5
 	sidx = 0
-	sqor = 5
+	sqor = 4
 	sepI = 4
 	attm = 0
 	modCost = 0
@@ -7258,7 +6998,7 @@ PART
 	resPri = 0
 	dstg = 7
 	sidx = 0
-	sqor = 6
+	sqor = 5
 	sepI = 4
 	attm = 0
 	modCost = 3633.3877
@@ -8666,7 +8406,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 7
+	sqor = 6
 	sepI = 4
 	attm = 0
 	modCost = 0
@@ -8900,7 +8640,7 @@ PART
 	resPri = 0
 	dstg = 9
 	sidx = 0
-	sqor = 8
+	sqor = 7
 	sepI = 7
 	attm = 0
 	modCost = 0
@@ -9258,7 +8998,7 @@ PART
 	resPri = 0
 	dstg = 10
 	sidx = 2
-	sqor = 11
+	sqor = 10
 	sepI = 7
 	attm = 0
 	modCost = 0
@@ -9453,7 +9193,7 @@ PART
 	resPri = 0
 	dstg = 11
 	sidx = 0
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -9743,7 +9483,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 1
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -9847,7 +9587,7 @@ PART
 	pos = -2.48157477,-1.37953568,-3.27571869
 	attPos = 0,0,0
 	attPos0 = -1.85661721,-2.90058231,-3.96564701E-06
-	rot = 0.49999997,0.50000006,-0.50000006,-0.50000006
+	rot = 0.5,0.50000006,-0.50000006,-0.50000006
 	attRot = 0,0,0.707106709,0.707106709
 	attRot0 = -0.500000119,-0.49999994,0.49999994,0.5
 	mir = 1,1,1
@@ -9858,7 +9598,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 2
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -9973,7 +9713,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 0
-	sqor = 11
+	sqor = 10
 	sepI = 9
 	attm = 0
 	modCost = 0
@@ -10307,7 +10047,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 3
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -10422,7 +10162,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 4
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -10734,7 +10474,7 @@ PART
 	pos = 1.1678834,11.2504387,-3.75611162
 	attPos = 0,0,0
 	attPos0 = -1.79284739,2.24939394,0.480392218
-	rot = 5.09953253E-08,0.991444945,-5.87418413E-07,-0.130526245
+	rot = 5.09953395E-08,0.991444945,-5.87418413E-07,-0.130526245
 	attRot = 0,0,0,1
 	attRot0 = 3.52880347E-09,-0.1305262,2.68043685E-08,-0.991444826
 	mir = 1,1,1
@@ -10883,7 +10623,7 @@ PART
 	resPri = 0
 	dstg = 11
 	sidx = 0
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -11173,7 +10913,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 1
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -11288,7 +11028,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 2
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -11403,7 +11143,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 0
-	sqor = 11
+	sqor = 10
 	sepI = 9
 	attm = 0
 	modCost = 0
@@ -11588,7 +11328,7 @@ PART
 	pos = -2.41085267,-1.10609055,5.81841421
 	attPos = 0,0,0
 	attPos0 = 1.78588951,-2.62712812,-0.47852686
-	rot = -3.04208925E-09,0.130526155,-2.31070487E-08,0.991445005
+	rot = -3.04217451E-09,0.130526215,-2.31070203E-08,0.991444886
 	attRot = 0,0,0,1
 	attRot0 = 2.31069599E-08,-0.991444945,-3.04210213E-09,0.130526155
 	mir = 1,1,1
@@ -11737,7 +11477,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 3
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -11852,7 +11592,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 4
-	sqor = 10
+	sqor = 9
 	sepI = 9
 	attm = 1
 	modCost = 0
@@ -12026,7 +11766,7 @@ PART
 	pos = -0.624963284,12.7085457,6.29863119
 	attPos = 0,0,0
 	attPos0 = -1.1920902E-07,3.70750165,0.958737671
-	rot = -0.499999642,0.49999994,-0.500000298,0.50000006
+	rot = -0.499999613,0.49999994,-0.500000298,0.50000006
 	attRot = 0,0,0,1
 	attRot0 = 0.500000179,-0.499999821,0.500000119,-0.499999851
 	mir = 1,1,1
@@ -12313,7 +12053,7 @@ PART
 	resPri = 0
 	dstg = 11
 	sidx = 0
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -12603,7 +12343,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 1
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -12718,7 +12458,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 2
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -12833,7 +12573,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 1
-	sqor = 11
+	sqor = 10
 	sepI = 8
 	attm = 0
 	modCost = 0
@@ -13018,7 +12758,7 @@ PART
 	pos = -4.48632908,-1.01115799,-0.755318642
 	attPos = 0,0,0
 	attPos0 = 1.78740537,-2.63426542,0.478933424
-	rot = 3.5968722E-07,0.79335326,2.7147189E-07,-0.608761668
+	rot = 3.59687249E-07,0.7933532,2.7147189E-07,-0.608761609
 	attRot = 0,0,0,1
 	attRot0 = -3.68562381E-09,-0.991444945,-4.85202434E-10,-0.130526096
 	mir = 1,1,1
@@ -13087,7 +12827,7 @@ PART
 	pos = -4.48362541,0.479282379,-0.765406132
 	attPos = 0,0,0
 	attPos0 = 1.79749382,-1.14382493,0.481636137
-	rot = 3.59687249E-07,0.7933532,2.7147189E-07,-0.608761609
+	rot = 3.5968722E-07,0.79335326,2.7147189E-07,-0.608761668
 	attRot = 0,0,0,1
 	attRot0 = -3.68562381E-09,-0.991444945,-4.85202434E-10,-0.130526096
 	mir = 1,1,1
@@ -13167,7 +12907,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 3
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -13282,7 +13022,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 4
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -13591,10 +13331,10 @@ PART
 {
 	part = strutConnector_4289288220
 	partName = CompoundPart
-	pos = -4.04103661,10.8236046,-0.568705916
+	pos = -4.04103661,10.8236046,-0.568706036
 	attPos = 0,0,0
 	attPos0 = -1.60079312,1.72049689,-0.924218535
-	rot = -1.31738204E-07,0.866025388,-7.03289018E-08,-0.49999997
+	rot = -1.31738219E-07,0.866025388,-7.03289018E-08,-0.49999997
 	attRot = 0,0,0,1
 	attRot0 = -1.48310142E-09,0.258819103,5.53493562E-09,-0.965925813
 	mir = 1,1,1
@@ -13743,7 +13483,7 @@ PART
 	resPri = 0
 	dstg = 11
 	sidx = 0
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -13852,7 +13592,7 @@ PART
 	pos = 3.71532845,9.10310745,1.03208411
 	attPos = 0,0,0
 	attPos0 = -2.50779819,-0.0222201459,7.15254146E-07
-	rot = 1.03511773E-07,0.707106888,-1.0351188E-07,0.707106709
+	rot = 1.03511766E-07,0.707106888,-1.0351188E-07,0.707106709
 	attRot = 0,0,0,1
 	attRot0 = 8.70064412E-08,-0.707106829,8.7006498E-08,0.707106769
 	mir = 1,1,1
@@ -13939,7 +13679,7 @@ PART
 	pos = 3.71533275,1.6231041,1.03208506
 	attPos = 0,0,0
 	attPos0 = -4.76837158E-07,-7.48000431,6.60915111E-06
-	rot = 3.17957102E-07,-0.70710665,3.17956534E-07,0.707106948
+	rot = 3.17957102E-07,-0.70710665,3.17956562E-07,0.707106948
 	attRot = 0,0,0,1
 	attRot0 = -9.9475983E-14,-1,5.96046448E-07,8.94069672E-08
 	mir = 1,1,1
@@ -14022,7 +13762,7 @@ PART
 	pos = 3.71534038,-1.81627274,2.88441229
 	attPos = 0,0,0
 	attPos0 = 1.8523314,-3.43937778,-4.09919539E-06
-	rot = -2.09722572E-07,1.10633636E-09,-0.707106531,0.707107008
+	rot = -2.09722586E-07,1.10633636E-09,-0.707106531,0.707107008
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = -0.50000006,0.499999911,-0.5,0.500000119
 	mir = 1,1,1
@@ -14033,7 +13773,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 1
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -14148,7 +13888,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 2
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -14252,7 +13992,7 @@ PART
 	pos = 3.71533751,-3.64414597,1.03208506
 	attPos = 0,0,0
 	attPos0 = -5.39095624E-13,-5.2672472,-2.39802667E-08
-	rot = 3.17956307E-07,-0.707106948,-3.1795733E-07,-0.70710665
+	rot = 3.17956307E-07,-0.707106948,-3.17957358E-07,-0.70710665
 	attRot = 0,0,0,1
 	attRot0 = -6.75015667E-14,-1,-5.92923103E-21,-2.98023171E-08
 	mir = 1,1,1
@@ -14263,7 +14003,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 1
-	sqor = 11
+	sqor = 10
 	sepI = 8
 	attm = 0
 	modCost = 0
@@ -14448,7 +14188,7 @@ PART
 	pos = 5.02224064,-0.939624786,2.33899164
 	attPos = 0,0,0
 	attPos0 = 1.30690563,-2.56273055,-1.30690563
-	rot = -4.12426488E-07,0.923879564,1.73321908E-07,0.382683337
+	rot = -4.12426573E-07,0.923879564,1.73321993E-07,0.382683337
 	attRot = 0,0,0,1
 	attRot0 = 3.00434588E-09,0.923879564,-1.24441868E-09,-0.382683337
 	mir = 1,1,1
@@ -14517,7 +14257,7 @@ PART
 	pos = 3.23640704,1.13980484,2.81946349
 	attPos = 0,0,0
 	attPos0 = 1.78737748,-0.483302504,0.478926331
-	rot = -3.52404044E-07,0.608761728,2.54214825E-07,0.79335326
+	rot = -3.52404044E-07,0.608761668,2.54214825E-07,0.7933532
 	attRot = 0,0,0,1
 	attRot0 = -1.28122679E-07,0.991444886,-1.68675296E-08,0.1305262
 	mir = 1,1,1
@@ -14586,7 +14326,7 @@ PART
 	pos = 3.71533513,11.9865456,2.88805056
 	attPos = 0,0,0
 	attPos0 = -1.85596466,2.8834362,5.48363914E-06
-	rot = -3.09086765E-08,9.05132609E-08,-0.707106888,0.707106709
+	rot = -3.09086836E-08,9.05132609E-08,-0.707106888,0.707106709
 	attRot = 0,0,-0.707106769,0.707106769
 	attRot0 = 0.50000006,-0.5,-0.5,0.50000006
 	mir = 1,1,1
@@ -14597,7 +14337,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 3
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -14712,7 +14452,7 @@ PART
 	resPri = 0
 	dstg = 12
 	sidx = 4
-	sqor = 9
+	sqor = 8
 	sepI = 8
 	attm = 1
 	modCost = 0
@@ -14955,7 +14695,7 @@ PART
 	pos = 3.71532941,14.7181053,1.03208411
 	attPos = 0,0,0
 	attPos0 = -6.60236297E-13,5.61499977,-6.6654718E-07
-	rot = -2.47786614E-14,-5.08088362E-08,3.55271368E-14,1
+	rot = -3.18840887E-14,-5.08088362E-08,4.26325641E-14,1
 	attRot = 0,0,0,1
 	attRot0 = -1.03511823E-07,-0.707106888,1.0351188E-07,0.707106709
 	mir = 1,1,1
@@ -15024,7 +14764,7 @@ PART
 	pos = 3.71532989,11.2959633,2.8817296
 	attPos = 0,0,0
 	attPos0 = -1.84964502,2.19285583,5.96046448E-07
-	rot = 7.18573006E-08,0.707106948,-1.3516636E-07,0.70710665
+	rot = 7.18572863E-08,0.707106948,-1.3516636E-07,0.70710665
 	attRot = 0,0,0,1
 	attRot0 = 7.10542736E-15,5.96046448E-08,-4.47662245E-08,1
 	mir = 1,1,1
@@ -15093,7 +14833,7 @@ PART
 	pos = 2.78689551,11.5258217,2.64018011
 	attPos = 0,0,0
 	attPos0 = -1.60809565,2.42271018,-0.928434372
-	rot = 9.68642269E-08,0.50000006,-8.57773941E-08,0.866025329
+	rot = 9.68642269E-08,0.50000006,-8.57774012E-08,0.866025329
 	attRot = 0,0,0,1
 	attRot0 = -1.22526744E-08,-0.258819014,4.57275959E-08,0.965925872
 	mir = 1,1,1
@@ -15772,7 +15512,7 @@ PART
 	istg = 0
 	resPri = 0
 	dstg = 0
-	sidx = 1
+	sidx = 0
 	sqor = 0
 	sepI = -1
 	attm = 1
@@ -15891,7 +15631,7 @@ PART
 	pos = 0.258435011,48.701088,0.795380175
 	attPos = 0,0,0
 	attPos0 = 0.883398056,0.323989868,-0.23670584
-	rot = -0.156929508,0.596733093,-0.120416231,-0.777677834
+	rot = -0.156929478,0.596733093,-0.120416202,-0.777677834
 	attRot = 0,0,0,1
 	attRot0 = -0.156929508,0.596733093,-0.120416231,-0.777677834
 	mir = 1,1,1
